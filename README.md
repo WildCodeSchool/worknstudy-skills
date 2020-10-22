@@ -1,4 +1,4 @@
-# Journal de bord - liste des compétences
+# 🗒️ Journal de bord - liste des compétences
 
 ## 👩🏽‍💻 Développer
 
