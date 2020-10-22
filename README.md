@@ -1,6 +1,6 @@
 # Journal de bord - liste des compétences
 
-## Développer
+## 👩🏽‍💻 Développer
 
 ### Semaine 1
 
@@ -9,7 +9,7 @@
 - [Frontend `React`](development/react.md)
 - [Gestion de projet `SCRUM`](development/scrum.md)
 
-## Architecture
+## 🧭 Architecture
 
 ### Semaine 1
 
@@ -20,7 +20,7 @@
 
 - [Structure d'une `API graphQL`](architecture/graphql.md)
 
-## Test, CI et déploiement
+## 📈 Test, CI et déploiement
 
 ### Semaine 1
 
