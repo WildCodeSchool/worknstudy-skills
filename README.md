@@ -6,7 +6,7 @@
 
 - [Langage `Javascript`](development/langage-javascript.md)
 - [Dev Backend `NodeJS`](development/nodejs.md)
-- [Frontend `React`](development/react.md)
+- [Dev Frontend `React`](development/react.md)
 - [Gestion de projet `SCRUM`](development/scrum.md)
 
 ## 🧭 Architecture
