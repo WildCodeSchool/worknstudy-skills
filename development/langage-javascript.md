@@ -15,7 +15,7 @@
 (e) => mc2;
 ```
 
-### Utilisation dans un projet complexe ❌ / ✔️
+### Utilisation dans un projet ❌ / ✔️
 
 [lien github](...)
 
