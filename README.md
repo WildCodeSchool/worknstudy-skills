@@ -4,7 +4,7 @@
 
 ### Semaine 1
 
-- [Langage `Javascript`](./development/langage-javascript)
+- [Langage `Javascript`](development/langage-javascript)
 - [Dev Backend `NodeJS`](./development/nodejs)
 - [Frontend `React`](./development/react)
 - [Gestion de projet `SCRUM`](./development/scrum)
