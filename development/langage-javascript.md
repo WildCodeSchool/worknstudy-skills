@@ -1,4 +1,4 @@
-# langage javascript
+# Langage Javascript
 
 ## 🎓 J'ai compris et je peux expliquer
 
