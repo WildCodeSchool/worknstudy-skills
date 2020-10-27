@@ -8,12 +8,21 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- notion 1 ❌ / ✔️
-- notion 2 ❌ / ✔️
+- Comment développer en utilisant un système de *livereloading* (`nodemon` par exemple) ❌ / ✔️
+- La manipulation des fichiers du système avec `fs` ❌ / ✔️
+- La connexion de mon application à une base de données sans ORM/ODM (`mongodb` ou `mysql` par exemple) ❌ / ✔️
+- L'intégration de modèles de base de données avec un ORM/ODM (`mongoose` par exemple) ❌ / ✔️
+- Le développement d'une API REST (avec `express` par exemple) ❌ / ✔️
+- Le développement d'une API GraphQL ❌ / ✔️
+- *Bonus : l'utilisation des streams en NodeJS* ❌ / ✔️
 
 ## 💻 J'utilise
 
 ### Un exemple personnel commenté ❌ / ✔️
+
+```javascript
+const convertMDFileToHTML = (pathToMDfile) => /* ... path to HTML file */
+```
 
 ### Utilisation dans un projet ❌ / ✔️
 
