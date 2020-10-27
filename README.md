@@ -9,6 +9,10 @@
 - [Dev Frontend `React`](development/react.md)
 - [Gestion de projet `SCRUM`](development/scrum.md)
 
+### Semaine 2
+
+- [Langage `TypeScript`](development/langage-typrescript.md)
+
 ## 🧭 Architecture
 
 ### Semaine 1
