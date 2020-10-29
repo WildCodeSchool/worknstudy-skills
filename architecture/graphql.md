@@ -1,15 +1,13 @@
-# Titre de la compétence
-
-> ❌ A travailler
-
-> ✔️ Auto validation par l'étudiant
-
-> 👌 Validation par le formateur
+# GraphQL
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- notion 1 ❌ / ✔️
-- notion 2 ❌ / ✔️
+- la différence entre REST et GraphQL ❌ / ✔️
+- les besoins auxquels répond GraphQL ❌ / ✔️
+- la définition d'un schéma
+- Query ❌ / ✔️
+- Mutation ❌ / ✔️
+- Subscription ❌ / ✔️
 
 ## 💻 J'utilise
 
