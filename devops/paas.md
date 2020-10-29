@@ -1,4 +1,4 @@
-# Titre de la compétence
+# Platform as a service
 
 > ❌ A travailler
 
@@ -8,8 +8,8 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- notion 1 ❌ / ✔️
-- notion 2 ❌ / ✔️
+- ce que c'est ❌ / ✔️
+- comment deployer une application sur une PaaS ❌ / ✔️
 
 ## 💻 J'utilise
 

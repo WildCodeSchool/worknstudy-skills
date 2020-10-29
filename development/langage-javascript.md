@@ -1,5 +1,11 @@
 # Langage Javascript
 
+> ❌ A travailler
+
+> ✔️ Auto validation par l'étudiant
+
+> 👌 Validation par le formateur
+
 ## 🎓 J'ai compris et je peux expliquer
 
 - les `structures` de base du langage ❌ / ✔️

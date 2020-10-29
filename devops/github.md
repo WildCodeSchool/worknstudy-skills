@@ -1,4 +1,4 @@
-# Titre de la compétence
+# GitHub
 
 > ❌ A travailler
 
@@ -8,8 +8,10 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- notion 1 ❌ / ✔️
-- notion 2 ❌ / ✔️
+- l'initialisation d'un projet ❌ / ✔️
+- travailler avec des branches ❌ / ✔️
+- faire une PR ❌ / ✔️
+- utiliser git rebase pour faire des commits propres ❌ / ✔️
 
 ## 💻 J'utilise
 
