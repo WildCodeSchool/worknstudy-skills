@@ -1,5 +1,11 @@
 # GraphQL
 
+> ❌ A travailler
+
+> ✔️ Auto validation par l'étudiant
+
+> 👌 Validation par le formateur
+
 ## 🎓 J'ai compris et je peux expliquer
 
 - la différence entre REST et GraphQL ❌ / ✔️
