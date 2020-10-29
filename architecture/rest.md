@@ -8,8 +8,11 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- notion 1 ❌ / ✔️
-- notion 2 ❌ / ✔️
+- les verbes HTTP ❌ / ✔️
+- les statuts HTTP ❌ / ✔️
+- les endpoints ❌ / ✔️
+- CORS ❌ / ✔️
+- la nomenclature recommandée pour les routes ❌ / ✔️
 
 ## 💻 J'utilise
 
