@@ -12,6 +12,7 @@
 - travailler avec des branches ❌ / ✔️
 - faire une PR ❌ / ✔️
 - utiliser git rebase pour faire des commits propres ❌ / ✔️
+- utiliser les gitHub actions ❌ / ✔️
 
 ## 💻 J'utilise
 
