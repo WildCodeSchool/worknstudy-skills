@@ -8,21 +8,32 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les verbes HTTP ❌ / ✔️
-- les statuts HTTP ❌ / ✔️
-- les endpoints ❌ / ✔️
-- CORS ❌ / ✔️
-- la nomenclature recommandée pour les routes ❌ / ✔️
+- les verbes HTTP  ✔️
+- les statuts HTTP  ✔️
+- les endpoints  ✔️
+- CORS ❌ 
+- la nomenclature recommandée pour les routes  ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté  ✔️
 
-### Utilisation dans un projet ❌ / ✔️
+` CREATE USER WITH REGISTER`
+POST http://localhost:8000/register 
+Content-Type: application/json
 
-[lien github](...)
+`Données en dur pour envoyer avec le post.  Retourne un code 200 si envoi réussi ou un code 500 si info manquante`
+{
+    "username" : "Titi",
+    "email" : "titi@wild.com",
+    "password" : "azerty"
+}
 
-Description :
+### Utilisation dans un projet  ✔️
+
+[lien github] https://github.com/WildCodeSchool/reims-js-202003-pjt-trott/tree/master/routes
+
+Description : Projet client Wild code School avec exemples de routes utilisateurs en Rest API
 
 ### Utilisation en production si applicable❌ / ✔️
 
