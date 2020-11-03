@@ -18,12 +18,13 @@
 
 ### Un exemple personnel commenté ✔️
 
-  ```
-  // Mongoose Validation Error
+```javascript
+// Mongoose Validation Error
   if (err.name === 'ValidationError') {
     const message = Object.values(err.errors).map(error => error.message);
     error = new ErrorResponse(message, 400);
   }
+```
   ```
 
 ### Utilisation dans un projet ✔️
@@ -65,5 +66,5 @@ Résolution :
 
 ## 📽️ J'en fais la démonstration
 
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+- J'ai ecrit un [tutoriel](...) ❌
+- J'ai fait une [présentation](...) ❌ 
