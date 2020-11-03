@@ -15,7 +15,7 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
 ```javascript
 // Import routes
@@ -30,7 +30,7 @@ Description : Projet API REST pour la wild
 
 ### Utilisation en production si applicable ✔️
 
-[https://github.com/lolottetheclash/jason](...)
+[https://jason31.herokuapp.com/](...)
 
 Description : Projet API REST pour la wild
 
