@@ -30,13 +30,13 @@
   //petit handleSubmit avec event en paramètre pour eviter le refresh de la page 
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet  ✔️
 
 [lien github](https://github.com/guigzzz31/hackatonEdf)
 
 Description : petit hackathon réalisé lors de la wild
 
-### J'ai utilisé ce langage en production ❌ / ✔️
+### J'ai utilisé ce langage en production  ✔️
 
 [lien du projet](https://github.com/WildCodeSchool/tlse-0919-js-boudu)
 
