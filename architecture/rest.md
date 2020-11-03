@@ -8,29 +8,37 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les verbes HTTP ❌ / ✔️
-- les statuts HTTP ❌ / ✔️
-- les endpoints ❌ / ✔️
-- CORS ❌ / ✔️
-- la nomenclature recommandée pour les routes ❌ / ✔️
+- les verbes HTTP ✔️
+- les statuts HTTP ✔️
+- les endpoints ✔️
+- CORS ✔️
+- la nomenclature recommandée pour les routes  ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
-### Utilisation dans un projet ❌ / ✔️
+  ```
+  // Mongoose Validation Error
+  if (err.name === 'ValidationError') {
+    const message = Object.values(err.errors).map(error => error.message);
+    error = new ErrorResponse(message, 400);
+  }
+  ```
 
-[lien github](...)
+### Utilisation dans un projet ✔️
 
-Description :
+[https://github.com/lolottetheclash/kayu_coco](...)
 
-### Utilisation en production si applicable❌ / ✔️
+Description : Projet perso de voyages
+
+### Utilisation en production si applicable❌ 
 
 [lien du projet](...)
 
 Description :
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ❌ 
 
 Description :
 
