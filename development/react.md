@@ -8,16 +8,43 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- l'état (_state_) pour contrôler l'affichage d'un composant ❌ / ✔️
-- les composants enfants et les _props_ qu'on leur passe ❌ / ✔️
-- le déclenchement d'instructions en fonction des actions de l'utilisateur ❌ / ✔️
-- le déclenchement d'instructions en fonction de l'étape du cycle de vie du composant ou du changement de valeur de ses props ❌ / ✔️
+- l'état (_state_) pour contrôler l'affichage d'un composant ✔️
+- les composants enfants et les _props_ qu'on leur passe ✔️
+- le déclenchement d'instructions en fonction des actions de l'utilisateur ✔️
+- le déclenchement d'instructions en fonction de l'étape du cycle de vie du composant ou du changement de valeur de ses props ✔️
 - l'usage d'un reducer (_useReducer_) pour gérer un état composé dans un composant
-- l'état stocké dans un composant avec un _context provider_ et accessible dans ses descendants via `useContext` ❌ / ✔️
+- l'état stocké dans un composant avec un _context provider_ et accessible dans ses descendants via `useContext` ❌
 
 ## 💻 J'utilise
 
 ### Un exemple personnel commenté ❌ / ✔️
+```
+  const [filtersQueryStr, setFiltersQueryStr] = useState('');
+  useEffect(() => {
+    const restaurantFilters = {
+      moments: q1,
+      specialties: q2,
+      ambiances: q3,
+      date: q4,
+      districts: q5,
+      dietSpecificities: q6,
+      budget: q7,
+      accesses: q8
+    };
+
+    if (q4) {
+      const date = new Date(q4);
+      restaurantFilters.date = date.getDay();
+    }
+
+    const updateQuery = async filters => {
+      await setFiltersQueryStr(formatQueryStr(filters));
+    };
+    updateQuery(restaurantFilters);
+  }, [q1, q2, q3, q4, q5, q6, q7, q8]);
+  
+  //un petit hook pour gérer les reponses du quizz qui sont sur des pages différentes
+```
 
 ### Utilisation dans un projet ❌ / ✔️
 
@@ -25,13 +52,13 @@
 
 Description :
 
-### Utilisation en production si applicable❌ / ✔️
+### Utilisation en production si applicable ✔️
 
-[lien du projet](...)
+[lien du projet](https://github.com/WildCodeSchool/tlse-0919-js-boudu)
 
-Description :
+Description : 
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel  ✔️
 
 Description :
 
@@ -39,8 +66,8 @@ Description :
 
 ### Titre
 
-- lien
-- description
+- [la doc](https://reactjs.org/)
+- la base
 
 ## 🚧 Je franchis les obstacles
 
