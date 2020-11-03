@@ -16,7 +16,7 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ✔️
+### Un exemple personnel commenté ✔️ 👌
 
 ```javascript
 // Mongoose Validation Error
@@ -27,7 +27,7 @@
 ```
   ```
 
-### Utilisation dans un projet ✔️
+### Utilisation dans un projet ✔️ 👌
 
 [https://github.com/lolottetheclash/kayu_coco](...)
 

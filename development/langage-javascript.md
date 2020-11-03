@@ -15,27 +15,27 @@
 
 ## 💻 Je code en Javascript
 
-### Un exemple de code commenté  ✔️
+### Un exemple de code commenté  ❌ **Un exemple de code JS dont tu es fière / par exemple un codewars ou un algo un peu compliqué**
 
 ```javascript
 code commenté // let a = 2;
 ```
 
-### Utilisation dans un projet ✔️
+### Utilisation dans un projet ❌ **Un projet plus personnel/parlant que celui de candidature**
 
 [https://github.com/lolottetheclash/jason](...)
 
 Description : Projet API REST pour la wild
 
 
-### J'ai utilisé ce langage en production ✔️
+### J'ai utilisé ce langage en production ❌ **Un projet plus personnel/parlant que celui de candidature**
 
 [https://jason31.herokuapp.com/](...)
 
 Description : Projet API REST pour la wild
 
 
-### J'ai utilisé ce langage en environement professionnel ✔️
+### J'ai utilisé ce langage en environement professionnel ❌ **Plus de précisions sur les cas d'utilisations et le travail réalisé en stage (librairies, fonctionnalités etc...)**
 
 Description : Utilisé lors de mondernier stage chez Beeguard
 

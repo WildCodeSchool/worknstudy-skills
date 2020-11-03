@@ -15,20 +15,20 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ✔️
+### Un exemple personnel commenté ❌ **Voir commentaires dans langage JS**
 
 ```javascript
 // Import routes
 app.use('/api/users', users);
 ```
 
-### Utilisation dans un projet  ✔️
+### Utilisation dans un projet  ❌
 
 [https://github.com/lolottetheclash/jason](...)
 
 Description : Projet API REST pour la wild
 
-### Utilisation en production si applicable ✔️
+### Utilisation en production si applicable ❌
 
 [https://jason31.herokuapp.com/](...)
 
