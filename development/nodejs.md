@@ -23,19 +23,19 @@
 const convertMDFileToHTML = (pathToMDfile) => /* ... path to HTML file */
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet  ✔️
 
-[lien github](...)
+[lien github] https://github.com/WildCodeSchool/reims-js-202003-pjt-trott
 
-Description :
+Description : Utilisation en projet client de la wild
 
-### Utilisation en production si applicable❌ / ✔️
+### Utilisation en production si applicable  ✔️
 
-[lien du projet](...)
+[lien du projet] https://github.com/WildCodeSchool/reims-js-202003-pjt-trott
 
-Description :
+Description : Utilisation en projet client de la wild
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ❌ 
 
 Description :
 
