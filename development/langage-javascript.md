@@ -8,47 +8,57 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les `structures` de base du langage ❌ / ✔️
-- les normes `ecmascript` ❌ / ✔️
-- l'utilisation de l'`asynchrone` ❌ / ✔️
-- les spécifités du mot-clef `this` ❌ / ✔️
+- les `structures` de base du langage  ✔️
+- les normes `ecmascript`  ✔️
+- l'utilisation de l'`asynchrone` ❌ 
+- les spécifités du mot-clef `this` ✔️
 
 ## 💻 Je code en Javascript
 
-### Un exemple de code commenté ❌ / ✔️
+### Un exemple de code commenté  ✔️
 
 ```javascript
-(e) => mc2;
+code commenté // let a = 2;
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[https://github.com/lolottetheclash/jason](...)
 
-Description :
+Description : Projet API REST pour la wild
 
-### J'ai utilisé ce langage en production ❌ / ✔️
 
-[lien du projet](...)
+### J'ai utilisé ce langage en production ✔️
 
-Description :
+[https://jason31.herokuapp.com/](...)
 
-### J'ai utilisé ce langage en environement professionnel ❌ / ✔️
+Description : Projet API REST pour la wild
 
-Description :
+
+### J'ai utilisé ce langage en environement professionnel ✔️
+
+Description : Utilisé lors de mondernier stage chez Beeguard
 
 ## 🌐 J'utilise des ressources
 
-### Titre
+### Academind
 
-- lien
-- description
+- [https://www.youtube.com/channel/UCSJbGtTlrDami-tDGPUV9-w]
+- Nombreux tutos
+
+### Brad Traversy
+- [https://www.youtube.com/channel/UC29ju8bIPH5as8OGnQzwJyA]
+- Nombreux tutos
+
+### Developer Mozilla
+- [https://developer.mozilla.org/fr/docs/Web/JavaScript]
+- Référence sur Js
 
 ## 🚧 Je franchis les obstacles
 
 ### Point de blocage ❌ / ✔️
 
-Description:
+Description: Travailler l'asynchrone + héritage des classes
 
 Plan d'action : (à valider par le formateur)
 
@@ -60,6 +70,6 @@ Résolution :
 
 ## 📽️ J'en fais la démonstration
 
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+- J'ai ecrit un [tutoriel](...) ❌ 
+- J'ai fait une [présentation](...) ❌ 
 
