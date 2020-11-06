@@ -10,7 +10,7 @@
 
 - les `structures` de base du langage ✔️
 - les normes `ecmascript` ✔️
-- l'utilisation de l'`asynchrone` ❌
+- l'utilisation de l'`asynchrone` ✔️
 - les spécifités du mot-clef `this` ✔️
 
 ## 💻 Je code en Javascript
@@ -33,19 +33,19 @@ const changeMeal = () => {
 
 ### Utilisation dans un projet ✔️
 
-[https://github.com/mathildetho/Treap] Projet Hackathon
+[Projet Hackathon Treap](https://github.com/mathildetho/Treap)
 
 Description : Le but était de créer une application web permettant de voyager tout en restant chez soi. Treap permet de nous faire voyager culinairement. Utilisation de 2 API externes. Développement en ReactJS. Plusieurs fonctionnalités ont été développés : recherche par pays, accès aléatoire d’un plat et d’une boisson, changement de plat ou boisson et accès aux informations d’un plat ou boisson en particulier.
 
 ### J'ai utilisé ce langage en production ✔️
 
-[https://best-games.netlify.app] Projet école
+[Projet d'école Best Games](https://best-games.netlify.app)
 
 Description : Création d'un générateur de jeux vidéos avec une API externe. Fonctionnalités : filtrage, suppression, accès plus en détail aux informations d'un jeu.
 
 ### J'ai utilisé ce langage en environement professionnel ✔️
 
-exemple de code lié au projet :
+exemple de code lié au projet lié à l'alternance :
 ```javascript
 const indexErreur = availableSteps.findIndex((etape) =>
 	['ETAT_ERREUR', 'ETAT_EN_COURS_ERREUR'].includes(etape.etat),
@@ -71,13 +71,11 @@ const etapeCliquable = (step) => {
 	return false;
 };
 ```
-Description : lors de mon alternance, je suis amené à utiliser javascript. Dans l'exemple, je réalisais un fil d'ariane pour un formulaire. Il existe plusieurs étapes à valider, si celle-ci n'est pas complétée ou en erreur, les prochaines étapes ne peuvent pas l'être et ne sont donc pas cliquable. Ainsi, ces dernières ont un style et un texte différent selon son état.
+Description : lors de mon alternance, je suis amené à utiliser javascript. Dans l'exemple, je réalisais un fil d'ariane pour un formulaire. Il existe plusieurs étapes à valider, si une étape n'est pas complétée ou en erreur, les prochaines étapes ne peuvent pas l'être et ne sont donc pas cliquable. Ainsi, ces dernières ont un style et un texte différent selon son état.
 
 ## 🌐 J'utilise des ressources ✔️
 
-### MDN wdb docs
-
-- [https://developer.mozilla.org/fr/docs/Web/JavaScript] : outil indispensable pour vérifier de la bonne utilisation de JavaScript
+- [MDN web docs](https://developer.mozilla.org/fr/docs/Web/JavaScript) : outil indispensable pour vérifier de la bonne utilisation de JavaScript
 
 ## 🚧 Je franchis les obstacles
 
@@ -96,5 +94,5 @@ Résolution :
 ## 📽️ J'en fais la démonstration
 
 - J'ai ecrit un [tutoriel](...) ❌ 
-- J'ai fait une [présentation](...) ❌ / ✔️
+- J'ai fait une [présentation](https://drive.google.com/drive/folders/1w0D8q6YaNfH4KkK4PrUm1oQLy9YgfRdp?usp=sharing "dossier composé de plusieurs fiches liées à JavaScript") ✔️
 
