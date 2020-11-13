@@ -6,7 +6,7 @@
 - [Dev Backend `NodeJS`](development/nodejs.md)
 - [Dev Frontend `React`](development/react.md)
 - [Gestion de projet `SCRUM`](development/scrum.md)
-- [Langage `TypeScript`](development/langage-typrescript.md)
+- [Langage `TypeScript`](development/langage-typescript.md)
 
 ## 🧭 Architecture
 
