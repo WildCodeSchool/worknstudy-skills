@@ -17,3 +17,8 @@
 
 - [Utilisation de `Github`](devops/github.md)
 - [Déploiement de type `platform as a service (PaaS)`](devops/paas.md)
+
+## 👩‍🏭 Expérience professionelle
+
+- [Mon entreprise](xp-pro/entreprise.md)
+- [Période du 23/11/2020 au 11/12/2020](xp-pro/experience-1.md)
