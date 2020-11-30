@@ -14,7 +14,9 @@ git remote add upstream git@github.com:WildCodeSchool/worknstudy-skills.git
 
 2. Mettre à jour ton dépôt local
 
-> à faire à chaque début de semaine de formation
+[source](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
+
+> à faire à chaque début de semaine de formation (attention aux conflits possibles)
 
 ```shell
 git fetch upstream
