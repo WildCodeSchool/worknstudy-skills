@@ -22,3 +22,7 @@
 
 - [Mon entreprise](xp-pro/entreprise.md)
 - [Période du 23/11/2020 au 11/12/2020](xp-pro/experience-1.md)
+
+## ℹ️ Aide
+
+- [Comment mettre à jour mon carnet de compétences](help/how-to-update.md)
