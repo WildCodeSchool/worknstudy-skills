@@ -6,7 +6,7 @@
 
 1. S'agit il de tes premiers jours dans l'entreprise ? (Si non, précise la date d'entrée)
 
-2. Décris comment se déroule la commnunication avec ton tuteur. (fréquence, valeur de l'aide ajoutée)
+2. Décris comment se déroule la communication avec ton tuteur. (fréquence, valeur de l'aide ajoutée)
 
 3. Décris ta mission actuelle au sein de l'entreprise
 
@@ -28,6 +28,6 @@
 
 5. Quel langage as tu le plus utilisé ?
 
-6. Quel design pattern as tu pu identifié ?
+6. Quel design pattern as tu pu identifier ?
 
 7. Sur quel point ton formateur ou ton groupe peuvent ils t'aider ?
