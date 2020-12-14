@@ -8,21 +8,40 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- l'initialisation d'un projet ❌ / ✔️
-- travailler avec des branches ❌ / ✔️
-- faire une PR ❌ / ✔️
-- utiliser git rebase pour faire des commits propres ❌ / ✔️
+- l'initialisation d'un projet ✔️
+- travailler avec des branches ✔️
+- faire une PR ✔️
+- utiliser git rebase pour faire des commits propres ✔️
 - utiliser les gitHub actions ❌ / ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
+
+    <Grid justify="center" className={classes.root} container>
+      <Grid item>
+        <PageNameGenerator pageName={infoPage.pageName} />
+      </Grid>
+      {/* infoTip est le bandeau informatif en haut de page */}
+      {infoPage.infoTip ? (
+        <Grid item>
+          <InfoTipGenerator infoTip={infoPage.infoTip} />
+        </Grid>
+      ) : null}
+      {/* VisitCardGenerator est le composant responsable de générer les cartes de visite */}
+      {infoPage.users ? (
+        <Grid item>
+          <VisitCardGenerator users={infoPage.users} />
+        </Grid>
+      ) : null}
+    </Grid>
 
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+[lien github](https://github.com/guigzzz31/vitrine-next-material-ui)
 
 Description :
+dans ce projet chaque branch a un préfixe feature/ refactor/ debug/ hotFix/ suivant la nature du dev à effectuer
 
 ### Utilisation en production si applicable❌ / ✔️
 
@@ -38,8 +57,7 @@ Description :
 
 ### Titre
 
-- lien
-- description
+-[NextJs](https://nextjs.org/) -[Material-ui](https://material-ui.com/getting-started/installation/)
 
 ## 🚧 Je franchis les obstacles
 
