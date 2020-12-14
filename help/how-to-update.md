@@ -12,6 +12,8 @@
 git remote add upstream git@github.com:WildCodeSchool/worknstudy-skills.git
 ```
 
+**Attention à mettre l'adresse du repository en ssh ou https selon ton mode de connexion à git**
+
 2. Mettre à jour ton dépôt local
 
 [source](https://docs.github.com/en/free-pro-team@latest/github/collaborating-with-issues-and-pull-requests/syncing-a-fork)
