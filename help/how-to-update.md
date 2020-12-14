@@ -8,11 +8,18 @@
 
 > à faire une fois dans ton dépôt local
 
+Si tu te connectes à git en https:
+
+```shell
+git remote add upstream https://github.com/WildCodeSchool/worknstudy-skills.git
+```
+
+Si tu te connectes à git en ssh:
+
 ```shell
 git remote add upstream git@github.com:WildCodeSchool/worknstudy-skills.git
 ```
 
-**Attention à mettre l'adresse du repository en ssh ou https selon ton mode de connexion à git**
 
 2. Mettre à jour ton dépôt local
 
