@@ -9,8 +9,11 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - les tests unitaires ❌ / ✔️
+- les mocks ❌ / ✔️
 - les tests d'integration ❌ / ✔️
 - les tests de bout en bout (end to end) ❌ / ✔️
+- le TDD ❌ / ✔️
+- les tests par snapshot ❌ / ✔️
 
 ## 💻 J'utilise
 
