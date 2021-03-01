@@ -8,7 +8,7 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- la différence et les points communs entre du code react et du code react native ❌ / ✔️
+- les différences et points communs entre du code react et du code react native ❌ / ✔️
 - ce que devient et comment est interprêté le code javascript dans une application react native ❌ / ✔️
 - les avantages et inconvénients de react native ❌ / ✔️
 - la différence entre react native et expo ❌ / ✔️
