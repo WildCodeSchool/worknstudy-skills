@@ -12,6 +12,7 @@
 
 - [Structure d'une `API REST`](architecture/rest.md)
 - [Structure d'une `API graphQL`](architecture/graphql.md)
+- [Technologies d'applications mobiles](architecture/mobile.md)
 
 ## 📈 Test, CI et déploiement
 
