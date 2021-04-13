@@ -6,6 +6,8 @@
 
 1. S'agit il de tes premiers jours dans l'entreprise ? (Si non, précise la date d'entrée)
 
+date d'entrée : 22/02/2021
+
 2. Décris comment se déroule la communication avec ton tuteur. (fréquence, valeur de l'aide ajoutée)
 
 3. Décris ta mission actuelle au sein de l'entreprise

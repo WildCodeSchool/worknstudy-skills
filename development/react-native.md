@@ -8,31 +8,31 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les différences et points communs entre du code react et du code react native ❌ / ✔️
-- ce que devient et comment est interprêté le code javascript dans une application react native ❌ / ✔️
-- les avantages et inconvénients de react native ❌ / ✔️
-- la différence entre react native et expo ❌ / ✔️
-- les principales briques qui composent react native (core components) ❌ / ✔️
-- comment écrire du style en react native ❌ / ✔️
-- comment est géré le layout en react native ❌ / ✔️
+- les différences et points communs entre du code react et du code react native ❌
+- ce que devient et comment est interprêté le code javascript dans une application react native ❌
+- les avantages et inconvénients de react native ❌
+- la différence entre react native et expo ❌
+- les principales briques qui composent react native (core components) ❌
+- comment écrire du style en react native ❌
+- comment est géré le layout en react native ❌
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ❌
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ❌
 
 [lien github](...)
 
 Description :
 
-### Utilisation en production si applicable❌ / ✔️
+### Utilisation en production si applicable❌
 
 [lien du projet](...)
 
 Description :
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ❌
 
 Description :
 
@@ -45,9 +45,9 @@ Description :
 
 ## 🚧 Je franchis les obstacles
 
-### Point de blocage ❌ / ✔️
+### Point de blocage ❌
 
-Description:
+Description: ne connais pas du tout
 
 Plan d'action : (à valider par le formateur)
 
@@ -59,5 +59,5 @@ Résolution :
 
 ## 📽️ J'en fais la démonstration
 
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+- J'ai ecrit un [tutoriel](...) ❌
+- J'ai fait une [présentation](...) ❌

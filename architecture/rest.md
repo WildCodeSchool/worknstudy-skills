@@ -8,31 +8,84 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les verbes HTTP ❌ / ✔️
-- les statuts HTTP ❌ / ✔️
-- les endpoints ❌ / ✔️
-- CORS ❌ / ✔️
-- la nomenclature recommandée pour les routes ❌ / ✔️
+- les verbes HTTP ✔️
+- les statuts HTTP ✔️
+- les endpoints ❌
+- CORS ❌
+- la nomenclature recommandée pour les routes ❌ ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
-### Utilisation dans un projet ❌ / ✔️
+```
+const campaignsRouter = require('express').Router();
 
-[lien github](...)
+const asyncHandler = require('express-async-handler');
+const campaignsController = require('../controllers/campaigns');
+const handleTextUpload = require('../middlewares/handleTextUpload');
+const handleUserConfirmed = require('../middlewares/handleUserConfirmed');
 
-Description :
+campaignsRouter.get(
+  '/downloadaudio',
+  asyncHandler(campaignsController.downloadAudio)
+);
 
-### Utilisation en production si applicable❌ / ✔️
+campaignsRouter.get('/video', asyncHandler(campaignsController.video));
 
-[lien du projet](...)
+campaignsRouter.get('/', asyncHandler(campaignsController.getCollection));
+campaignsRouter.get('/audio', asyncHandler(campaignsController.playAudio));
+campaignsRouter.get(
+  '/:campaignId',
+  asyncHandler(campaignsController.getOneCampaign)
+);
 
-Description :
+campaignsRouter.post(
+  '/',
+  handleUserConfirmed,
+  asyncHandler(campaignsController.createCampaignId)
+);
+campaignsRouter.post(
+  '/uploadtext',
+  handleTextUpload,
+  asyncHandler(campaignsController.readText)
+);
 
-### Utilisation en environement professionnel ❌ / ✔️
+campaignsRouter.post('/TTS', asyncHandler(campaignsController.vocalization));
 
-Description :
+campaignsRouter.put(
+  '/:campaignId',
+  asyncHandler(campaignsController.updateCampaign)
+);
+
+campaignsRouter.put(
+  '/:campaignId/stop',
+  asyncHandler(campaignsController.stopCampaign)
+);
+
+campaignsRouter.delete(
+  '/:campaignId',
+  asyncHandler(campaignsController.deleteCampaign)
+);
+```
+
+module.exports = campaignsRouter;
+
+### Utilisation dans un projet ✔️
+
+[lien du projet](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
+
+Description : projet 3 de la wild promo sept 2020
+
+### Utilisation en production si applicable ✔️
+
+[lien du projet](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
+
+Description : projet 3 de la wild promo sept 2020
+
+### Utilisation en environement professionnel ✔️
+
+Description : projet 3 de la wild promo sept 2020
 
 ## 🌐 J'utilise des ressources
 

@@ -8,30 +8,31 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les différences avec l'architecture monolithique ❌ / ✔️
-- la communication asynchrone entre services ❌ / ✔️
-- le deploiement d'un cluster ❌ / ✔️
-
+- les différences avec l'architecture monolithique ✔️
+- la communication asynchrone entre services ❌
+- le deploiement d'un cluster ❌
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ❌
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔
 
-[lien github](...)
+[lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
 
-Description :
+Description : projet 3 de la wild promo sept 2020
 
 ### Utilisation en production si applicable❌ / ✔️
 
-[lien du projet](...)
+[lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
 
-Description :
+Description : projet 3 de la wild promo sept 2020
 
 ### Utilisation en environement professionnel ❌ / ✔️
 
-Description :
+[lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
+
+Description : projet 3 de la wild promo sept 2020
 
 ## 🌐 J'utilise des ressources
 
@@ -44,7 +45,7 @@ Description :
 
 ### Point de blocage ❌ / ✔️
 
-Description:
+Description: la communication asynchrone entre services
 
 Plan d'action : (à valider par le formateur)
 
@@ -56,5 +57,5 @@ Résolution :
 
 ## 📽️ J'en fais la démonstration
 
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+- J'ai ecrit un [tutoriel](...) ❌
+- J'ai fait une [présentation](...) ❌
