@@ -12,7 +12,7 @@
 - les besoins auxquels répond GraphQL ❌ / ✔️
 - la définition d'un schéma
 - Query ❌ / ✔️
-- Mutation ❌ / ✔️
+- Mutation ✔️
 - Subscription ❌ / ✔️
 
 ## 💻 J'utilise
