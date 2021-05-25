@@ -10,9 +10,9 @@
 
 - les verbes HTTP ✔️
 - les statuts HTTP ✔️
-- les endpoints ❌
-- CORS ❌
-- la nomenclature recommandée pour les routes ❌ ✔️
+- les endpoints ✔️
+- CORS ✔️
+- la nomenclature recommandée pour les routes ✔️
 
 ## 💻 J'utilise
 
