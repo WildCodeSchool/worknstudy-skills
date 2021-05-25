@@ -8,8 +8,8 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- l'intéret de TypeScript dans l'IDE ❌ 
-- les types de bases ❌ 
+- l'intéret de TypeScript dans l'IDE ✔️ 
+- les types de bases ✔️ 
 - comment et pourquoi étendre une interface ❌ 
 - les classes et les decorators ❌ 
 
