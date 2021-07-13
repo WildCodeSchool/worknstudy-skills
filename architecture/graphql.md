@@ -21,7 +21,8 @@ GrapqhQL, en entreprise et à l'école
 
 ### Un exemple personnel commenté ✔️
 
-```une query pour get 1 article en fonction de son ID
+une query pour get 1 article en fonction de son ID
+```
 
   @Query(() => Article)
   oneArticle(
@@ -45,8 +46,8 @@ GrapqhQL, en entreprise et à l'école
   }
 
 ```
-
-```une mutation pour supprimer la session de connexion
+une mutation pour supprimer la session de connexion
+```
 
   @Mutation(() => User)
   async deleteSession(@Ctx() { user }: { user: User | null }): Promise<User> {
@@ -64,8 +65,8 @@ GrapqhQL, en entreprise et à l'école
   }
 
 ```
-
-```une subscription ppour s'abonner à la création de nouveaux commentaires relatifs à un 
+une subscription ppour s'abonner à la création de nouveaux commentaires relatifs à un article
+```
 
   @Subscription({
     topics: 'NEW_COMMENT',
@@ -81,21 +82,66 @@ GrapqhQL, en entreprise et à l'école
 
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
 
-Description :
+Description : voici le lien du repo de SkillzShare, le projet de l'année réalisé avec graphql
 
 ### Utilisation en production si applicable ❌ / ✔️
 
-[lien du projet](...)
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
 
-Description :
+Description : la production de SkillzShare
 
 ### Utilisation en environement professionnel ❌ / ✔️
 
 Développement de la partie front end de Dmitri, un projet pour un client avec l'entreprise
 
-```typescript
+utilisation de graphql en milieu professionel, voici ci-dessous un exemple du fichier généré par le back pour servir le front
+
+```
+export const GetParentDocument = gql`
+    query GetParent($id: ID!) {
+  User(where: {id: $id}) {
+    ...UserProfile
+    ...UserRoles
+    ...UserMetadata
+    parent {
+      ...ParentProfile
+    }
+  }
+}
+    ${UserProfileFragmentDoc}
+${UserRolesFragmentDoc}
+${UserMetadataFragmentDoc}
+${ParentProfileFragmentDoc}`;
+
+/**
+ * __useGetParentQuery__
+ *
+ * To run a query within a React component, call `useGetParentQuery` and pass it any options that fit your needs.
+ * When your component renders, `useGetParentQuery` returns an object from Apollo Client that contains loading, error, and data properties
+ * you can use to render your UI.
+ *
+ * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
+ *
+ * @example
+ * const { data, loading, error } = useGetParentQuery({
+ *   variables: {
+ *      id: // value for 'id'
+ *   },
+ * });
+ */
+export function useGetParentQuery(baseOptions: Apollo.QueryHookOptions<Types.GetParentQuery, Types.GetParentQueryVariables>) {
+        const options = {...defaultOptions, ...baseOptions}
+        return Apollo.useQuery<Types.GetParentQuery, Types.GetParentQueryVariables>(GetParentDocument, options);
+      }
+export function useGetParentLazyQuery(baseOptions?: Apollo.LazyQueryHookOptions<Types.GetParentQuery, Types.GetParentQueryVariables>) {
+          const options = {...defaultOptions, ...baseOptions}
+          return Apollo.useLazyQuery<Types.GetParentQuery, Types.GetParentQueryVariables>(GetParentDocument, options);
+        }
+export type GetParentQueryHookResult = ReturnType<typeof useGetParentQuery>;
+export type GetParentLazyQueryHookResult = ReturnType<typeof useGetParentLazyQuery>;
+export type GetParentQueryResult = Apollo.QueryResult<Types.GetParentQuery, Types.GetParentQueryVariables>;
 
 ```
 
