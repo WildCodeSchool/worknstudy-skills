@@ -56,7 +56,164 @@ Description :
 
 [lien du projet](https://github.com/WildCodeSchool/tlse-0919-js-boudu)
 
-Description : 
+Description : le context de la gestion d'annonces (fonctionnalité principale) de Dmitri
+
+```AdsProvider.tsx
+
+import React, { Dispatch, SetStateAction, useContext, useEffect, useState } from 'react'
+import { GetAdsDocument, GetArchivedAdsDocument } from '../generated/hooks'
+import {
+  AdArchivedFragment, AdFragment, AnnounceWhereInput, Exact, GetAdsQuery, GetAdsQueryVariables,
+  GetArchivedAdsQuery, GetArchivedAdsQueryVariables,
+} from '../generated/types'
+import { useAwaitableQuery } from '../hooks/useAwaitableQuery'
+import { useCurrentUser } from './currentUserContext'
+
+type paramsRefetch = keyof AnnounceWhereInput
+type AdsContextType = {
+  ads?: AdFragment[]
+  archivedAds?: AdArchivedFragment[]
+  refetchAds?: ()=> Promise<void>
+  loadingAds?: boolean
+  currentTab?: number
+  setCurrentTab?: Dispatch<SetStateAction<number>>
+}
+
+const AdsContext = React.createContext<AdsContextType>({})
+
+type MapTabToStateType = { [key in number]: paramsRefetch}
+const mapTabToStateTeacher: MapTabToStateType = { 0: 'isPublished', 1: 'isValidated', 2: 'isFinished' }
+const mapTabToStateLearner: MapTabToStateType = { 0: 'isPublished', 1: 'isValidated', 2: 'isMarked' }
+const mapTabToState: { [key in number]: MapTabToStateType} = { 0: mapTabToStateLearner, 1: mapTabToStateTeacher }
+
+export const AdsProvider: React.FC = ({ children }) => {
+  const { currentUser } = useCurrentUser()
+
+  const [ads, setAds] = useState<AdFragment[]>()
+  const [archivedAds, setArchivedAds] = useState<AdArchivedFragment[]>()
+  const [loadingAds, setLoadingAds] = useState<boolean>(false)
+  const [currentTab, setCurrentTab] = useState<number>(0)
+
+  const getAds = useAwaitableQuery<GetAdsQuery, GetAdsQueryVariables>(GetAdsDocument)
+  const getArchivedAds = useAwaitableQuery<GetArchivedAdsQuery, GetArchivedAdsQueryVariables>(GetArchivedAdsDocument)
+  const abortController = React.useRef<AbortController>()
+
+  const fetchLearnerAds = async () => {
+    const queryStateKey = mapTabToState[Number(currentUser?.isTeacher)][currentTab]
+
+    if (abortController.current) abortController.current.abort()
+
+    const controller = new window.AbortController()
+    abortController.current = controller
+
+    try {
+      setLoadingAds(true)
+      const res = await getAds({ variables: {
+        condition: {
+          [currentUser?.isStudent ? 'student' : 'parent']: { id: currentUser?.id },
+          [queryStateKey]: true,
+        },
+      },
+                                 fetchPolicy: 'no-cache',
+                                 context: {
+                                   fetchOptions: {
+                                     signal: controller.signal,
+                                   },
+                                 },
+      })
+      if (currentTab === 2) {
+        const resArchived = await getArchivedAds({ variables: {
+          condition: {
+            [currentUser?.isStudent ? 'student' : 'parent']: { id: currentUser?.id },
+            isArchived: true,
+          },
+        },
+                                                   fetchPolicy: 'no-cache',
+        })
+        setArchivedAds(resArchived.data?.allAnnounces!)
+      }
+      if (!controller.signal.aborted)
+        setAds(res.data?.allAnnounces!)
+
+      setLoadingAds(false)
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  const fetchTeacherAds = async () => {
+    try {
+      setLoadingAds(true)
+      if (currentTab === 0) {
+        const res = await getAds({ variables: {
+          condition: {
+            [mapTabToState[Number(currentUser?.isTeacher)][currentTab]]: true,
+            candidates_some: { id: currentUser?.id },
+          },
+        },
+                                   fetchPolicy: 'no-cache',
+        })
+        setAds(res.data?.allAnnounces!)
+        setLoadingAds(false)
+      } else {
+        if (currentTab === 2) {
+          const resArchived = await getArchivedAds({ variables: {
+            condition: {
+              isArchived: true,
+            },
+          },
+                                                     fetchPolicy: 'no-cache',
+          })
+          setArchivedAds(resArchived.data?.allAnnounces!)
+        }
+        const res = await getAds({ variables: {
+          condition: {
+            [mapTabToState[Number(currentUser?.isTeacher)][currentTab]]: true,
+          },
+        },
+                                   fetchPolicy: 'no-cache',
+        })
+        setAds(res.data?.allAnnounces!)
+        setLoadingAds(false)
+      }
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  useEffect(() => {
+    const getAddsAsync = async () => {
+      if (currentUser?.isTeacher)
+        await fetchTeacherAds()
+      else
+        await fetchLearnerAds()
+    }
+    getAddsAsync()
+  }, [currentTab])
+
+  return (
+    <AdsContext.Provider
+      value={{
+        ads,
+        archivedAds,
+        refetchAds: currentUser?.isTeacher ? fetchTeacherAds : fetchLearnerAds,
+        loadingAds,
+        currentTab,
+        setCurrentTab,
+      }}
+    >
+      {children}
+    </AdsContext.Provider>
+  )
+}
+
+export const useAds = () => {
+  const ctx = useContext(AdsContext)
+  return ctx
+}
+
+
+```
 
 ### Utilisation en environement professionnel  ✔️
 
