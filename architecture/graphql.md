@@ -21,9 +21,8 @@ GrapqhQL, en entreprise et à l'école
 
 ### Un exemple personnel commenté ✔️
 
-une query pour get 1 article en fonction de son ID
-```
-
+```ts
+//une query pour get 1 article en fonction de son ID
   @Query(() => Article)
   oneArticle(
     @Ctx() { user }: { user: User | null },
@@ -46,9 +45,8 @@ une query pour get 1 article en fonction de son ID
   }
 
 ```
-une mutation pour supprimer la session de connexion
-```
-
+```ts
+//une mutation pour supprimer la session de connexion
   @Mutation(() => User)
   async deleteSession(@Ctx() { user }: { user: User | null }): Promise<User> {
     if (!user) {
@@ -65,9 +63,8 @@ une mutation pour supprimer la session de connexion
   }
 
 ```
-une subscription ppour s'abonner à la création de nouveaux commentaires relatifs à un article
-```
-
+```ts
+//une subscription ppour s'abonner à la création de nouveaux commentaires relatifs à un article
   @Subscription({
     topics: 'NEW_COMMENT',
   })
@@ -98,7 +95,7 @@ Développement de la partie front end de Dmitri, un projet pour un client avec l
 
 utilisation de graphql en milieu professionel, voici ci-dessous un exemple du fichier généré par le back pour servir le front
 
-```
+```ts
 export const GetParentDocument = gql`
     query GetParent($id: ID!) {
   User(where: {id: $id}) {

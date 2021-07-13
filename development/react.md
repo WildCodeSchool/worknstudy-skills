@@ -18,47 +18,46 @@
 ## 💻 J'utilise
 
 ### Un exemple personnel commenté ❌ / ✔️
-```
-  const [filtersQueryStr, setFiltersQueryStr] = useState('');
-  useEffect(() => {
-    const restaurantFilters = {
-      moments: q1,
-      specialties: q2,
-      ambiances: q3,
-      date: q4,
-      districts: q5,
-      dietSpecificities: q6,
-      budget: q7,
-      accesses: q8
-    };
 
-    if (q4) {
-      const date = new Date(q4);
-      restaurantFilters.date = date.getDay();
-    }
-
-    const updateQuery = async filters => {
-      await setFiltersQueryStr(formatQueryStr(filters));
-    };
-    updateQuery(restaurantFilters);
-  }, [q1, q2, q3, q4, q5, q6, q7, q8]);
+```tsx
+  //un handle change generique pour modifiier un state User
   
-  //un petit hook pour gérer les reponses du quizz qui sont sur des pages différentes
+  const [user, setUser] = useState<User>(defaultUser);
+  const onUserChange = <P extends keyof User>(prop: P, value: User[P]) => {
+    setUser({ ...user, [prop]: value });
+  };
+  
 ```
 
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
 
-Description :
+```tsx
+//Description : 
+export default function App(): JSX.Element {
+  const { data, loading } = useQuery(CHECK_AUTH);
+  return (
+    <>
+      {!loading && (
+        <CurrentUserContext isAuthenticate={!!data}>
+          <RootRouter />
+        </CurrentUserContext>
+      )}
+    </>
+  );
+}
+
+```
 
 ### Utilisation en production si applicable ✔️
 
-[lien du projet](https://github.com/WildCodeSchool/tlse-0919-js-boudu)
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
 
-Description : le context de la gestion d'annonces (fonctionnalité principale) de Dmitri
+### Utilisation en environement professionnel  ✔️
 
-```AdsProvider.tsx
+```tsx
+//Description : le context de la gestion d'annonces (fonctionnalité principale) de Dmitri
 
 import React, { Dispatch, SetStateAction, useContext, useEffect, useState } from 'react'
 import { GetAdsDocument, GetArchivedAdsDocument } from '../generated/hooks'
@@ -212,19 +211,15 @@ export const useAds = () => {
   return ctx
 }
 
-
 ```
-
-### Utilisation en environement professionnel  ✔️
-
-Description :
-
 ## 🌐 J'utilise des ressources
 
 ### Titre
 
-- [la doc](https://reactjs.org/)
-- la base
+- [la doc react](https://reactjs.org/)
+- [le handbook typescript](https://www.typescriptlang.org/docs/handbook/intro.html)
+- [react router pour la navigation](https://reactrouter.com/)
+- [chakra-ui pour le style](https://chakra-ui.com/docs/getting-started)
 
 ## 🚧 Je franchis les obstacles
 
