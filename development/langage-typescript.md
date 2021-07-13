@@ -1,60 +1,88 @@
 # TypeScript
-
 > ❌ A travailler
-
 > ✔️ Auto validation par l'étudiant
-
 > 👌 Validation par le formateur
 
-## 🎓 J'ai compris et je peux expliquer
 
-- l'intéret de TypeScript dans l'IDE ❌ / ✔️
-- les types de bases ❌ / ✔️
-- comment et pourquoi étendre une interface ❌ / ✔️
-- les classes et les decorators ❌ / ✔️
+## 🎓 J'ai compris et je peux expliquer
+- l'intéret de TypeScript dans l'IDE ✔️
+- les types de bases ✔️
+- comment et pourquoi étendre une interface ✔️
+- les classes et les decorators ❌
+
 
 ## 💻 J'utilise
+### Un exemple personnel commenté ✔️
+```javascript
+// interface indiquant les types de chaque props
+interface InscriptionConnexionLayoutProps {
+  title: string;
+  children: React.ReactNode;
+  img?: boolean;
+  goHome?: boolean;
+}
+```
 
-### Un exemple personnel commenté ❌ / ✔️
+### Utilisation dans un projet ✔️
+[lien github projet lood](https://github.com/mathildetho/lood/blob/authentification/apps/front-client/src/app/components/DataDisplay/Icon/Icon.component.tsx)
+Description : utilisation de typeScript sur mon projet personnel côté front et back.
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation en production si applicable ✔️
+### Utilisation en environement professionnel ✔️
+[lien du projet Hellia](https://app.hellia.fr/)
+Description : Mise en place progressive de TypeScript sur tous les composants front de l'application
+```javascript
+export type Adresse = {
+  numRue: string;
+  nomRue: string;
+  ville: string;
+  codePostal: string;
+  pays: string;
+};
 
-[lien github](...)
+export type Proposition = {
+  component: ReactNode;
+  onClick: () => void;
+};
 
-Description :
+export interface AdresseInputProps {
+  required?: boolean;
+  className?: string;
+  adresse?: Adresse;
+  handleChange: (adresse: Adresse) => void;
+  additionalPropositions?: Proposition[];
+  style?: Record<string, unknown>;
+  name: string;
+  isValid: boolean;
+  error?: string;
+  erreurValidation?:boolean;
+  index?: string;
+}
 
-### Utilisation en production si applicable❌ / ✔️
+interface AdresseInputState {
+  propositions: Record<string, Record<string, unknown>>;
+  adresse: Adresse;
+  open: boolean;
+  isfocused: boolean;
+  villesCorrespondantsAuCP: string[];
+  villeCPOnSearch: boolean
+}
 
-[lien du projet](...)
+class AdresseInput extends Component<AdresseInputProps, AdresseInputState> {}
+```
 
-Description :
-
-### Utilisation en environement professionnel ❌ / ✔️
-
-Description :
 
 ## 🌐 J'utilise des ressources
+### [TypeScript](https://www.typescriptlang.org)
+- Documentation de Typescript
+### [Quêtes de la Wild Code School](https://odyssey.wildcodeschool.com/quests/1412)
+- Présentation de Typescript
+### [Je suis un dev](https://www.jesuisundev.com/comprendre-typescript-en-5-minutes/)
+- Article sur Typescript
 
-### Titre
-
-- lien
-- description
 
 ## 🚧 Je franchis les obstacles
+### Point de blocage ❌ 
 
-### Point de blocage ❌ / ✔️
 
-Description:
-
-Plan d'action : (à valider par le formateur)
-
-- action 1 ❌ / ✔️
-- action 2 ❌ / ✔️
-- ...
-
-Résolution :
-
-## 📽️ J'en fais la démonstration
-
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+## 📽️ J'en fais la démonstration ❌

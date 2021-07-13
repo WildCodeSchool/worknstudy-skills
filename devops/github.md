@@ -1,61 +1,45 @@
 # GitHub
-
 > ❌ A travailler
-
 > ✔️ Auto validation par l'étudiant
-
 > 👌 Validation par le formateur
 
-## 🎓 J'ai compris et je peux expliquer
 
+## 🎓 J'ai compris et je peux expliquer
 - l'initialisation d'un projet  ✔️
 - travailler avec des branches  ✔️
 - faire une PR ✔️
-- utiliser git rebase pour faire des commits propres ❌ / ✔️
-- utiliser les gitHub actions ❌ / ✔️
+- utiliser git rebase pour faire des commits propres ✔️
+- utiliser les gitHub actions ✔️
+
 
 ## 💻 J'utilise
+### Un exemple personnel commenté ✔️
+```javascript
+//clone le projet des lamas
+git clone https://github.com/WildCodeSchool/wns-2020-11-remote-1-lamas.git
+```
 
-### Un exemple personnel commenté ❌ / ✔️
+### Utilisation dans un projet ✔️
+### Utilisation en production si applicable ✔️
+[lien github du projet Lamas](https://github.com/WildCodeSchool/wns-2020-11-remote-1-lamas)
+[lien du projet Lamas](https://lamas.wns.wilders.dev)
+Description : utilisation d'un workflow git/gitHub sur ce projet
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation en environement professionnel ✔️
+Description : utilisation d'un workflow git/gitHub
 
-[lien github](...)
-
-Description :
-
-### Utilisation en production si applicable❌ / ✔️
-
-[lien du projet](...)
-
-Description :
-
-### Utilisation en environement professionnel ❌ / ✔️
-
-Description :
 
 ## 🌐 J'utilise des ressources
+### [Git](https://git-scm.com/docs)
+- documentation Git
+### [GitHub Actions](https://docs.github.com/en/actions)
+- documentation GitHub Actions
+### [Git education](https://education.github.com/git-cheat-sheet-education.pdf)
+- CheatSheet Git
 
-### Titre
-
-- lien
-- description
 
 ## 🚧 Je franchis les obstacles
+### Point de blocage ❌ 
 
-### Point de blocage ❌ / ✔️
 
-Description:
-
-Plan d'action : (à valider par le formateur)
-
-- action 1 ❌ / ✔️
-- action 2 ❌ / ✔️
-- ...
-
-Résolution :
-
-## 📽️ J'en fais la démonstration
-
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+## 📽️ J'en fais la démonstration ❌ 

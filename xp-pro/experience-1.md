@@ -61,6 +61,7 @@ ReactJS avec TypeScript.
 
 6. Quel design pattern as tu pu identifier ?
 L'architecture utilisée est sous la forme ?
+REST API
 
 
 7. Sur quel point ton formateur ou ton groupe peuvent ils t'aider ?

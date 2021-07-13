@@ -1,42 +1,81 @@
-# Titre de la compétence
-
+# React
 > ❌ A travailler
-
 > ✔️ Auto validation par l'étudiant
-
 > 👌 Validation par le formateur
 
-## 🎓 J'ai compris et je peux expliquer
 
+## 🎓 J'ai compris et je peux expliquer
 - l'état (_state_) pour contrôler l'affichage d'un composant ✔️
 - les composants enfants et les _props_ qu'on leur passe ✔️
 - le déclenchement d'instructions en fonction des actions de l'utilisateur ✔️
 - le déclenchement d'instructions en fonction de l'étape du cycle de vie du composant ou du changement de valeur de ses props ✔️
-- l'usage d'un reducer (_useReducer_) pour gérer un état composé dans un composant ❌
-- l'état stocké dans un composant avec un _context provider_ et accessible dans ses descendants via `useContext` ❌ 
+- l'usage d'un reducer (_useReducer_) pour gérer un état composé dans un composant ✔️
+- l'état stocké dans un composant avec un _context provider_ et accessible dans ses descendants via `useContext` ✔️ 
+
 
 ## 💻 J'utilise
-
 ### Un exemple personnel commenté ✔️
-```
+```javascript
+import { ApolloError } from '@apollo/client';
+import React from 'react';
+import { connect } from 'react-redux';
+import { StaticContext } from 'react-router';
+import { Route, Redirect, RouteComponentProps } from 'react-router-dom';
+import { AnyAction, bindActionCreators, Dispatch } from 'redux';
+import * as snackbarsActions from '../../../reducers/snackbar/actions';
 
+const PrivateRoute = (props: {
+  addSnackbar: (
+    icon: string,
+    message: { message: string },
+    time: number
+  ) => void;
+  path: string;
+  component:
+    | React.ComponentType<never>
+    | React.ComponentType<RouteComponentProps<never, StaticContext, unknown>>;
+}) => {
+  // récupérer s'il y a un token (user connecté)
+  const authToken = localStorage.getItem('token');
+
+  if (!authToken) {
+    // si pas connecté, redirection et snackbar d'indication
+    props.addSnackbar(
+      'warning',
+      {
+        message: 'Pour accéder à cette page, tu dois te connecter.',
+      },
+      3000
+    );
+    return <Redirect to="/se-connecter" />;
+  }
+
+  // sinon peut accèder à la route demandé
+  return <Route path={props.path} component={props.component} />;
+};
+
+// permet de faire l'appel à l'action d'ajout de la snackbar
+const mapDispatchToProps = (dispatch: Dispatch<AnyAction>) => {
+  return {
+    addSnackbar: bindActionCreators(snackbarsActions.add, dispatch),
+  };
+};
+
+export default connect(null, mapDispatchToProps)(PrivateRoute);
+
+// exemple private route dans le composant App.tsx
+<PrivateRoute path="/looding/:userId" component={HomeLooder} />
 ```
 
 ### Utilisation dans un projet ✔️
-
-[Projet personnel lood](https://github.com/mathildetho/lood_front)
-
-Description : Création d'une application dans le même esprit que Tinder mais qui met en relation en fonction des goûts culinaires. Elle permet de trouver son âme soeur culinaire. Création d'une API interne. Les fonctionnalités mises en place : authentification, filtrage, favoris, chat et site responsive.
-Utilisation de ReactJS, Material-ui, Redux en front.
+[Projet personnel lood](https://github.com/mathildetho/lood/blob/authentification/apps/front-client/src/app/components/Feedback/SnackBar/SnackBar.component.tsx)
+Description : Création d'une application dans le même esprit que Tinder mais qui met en relation en fonction des goûts culinaires. Elle permet de trouver son âme soeur culinaire. Le front est créé via cette librairie.
 
 ### Utilisation en production si applicable ✔️
-
 [Projet Hackathon Treap](https://treap.netlify.app)
-
 Description : Le but était de créer une application web permettant de voyager tout en restant chez soi. Treap permet de nous faire voyager culinairement. Utilisation de 2 API externes. Plusieurs fonctionnalités ont été développés : recherche par pays, accès aléatoire d’un plat et d’une boisson, changement de plat ou boisson et accès aux informations d’un plat ou boisson en particulier.
 
 ### Utilisation en environement professionnel ✔️
-
 ``` javascript
 import React from 'react';
 import { connect } from 'react-redux';
@@ -351,26 +390,17 @@ export default connect(mapStateToProps)(Stepper);
 ```
 Description : Lors de mon alternance, j'ai été amené à créé un fil d'ariane, un composant nommé Stepper. Il sera appelé à chaque création/modification de formulaires, que ce soit pour un bail, un locataire, un logement ou une société. Le but est que l'utilisateur puisse savoir où il en est sur son formulaire (indication du type de formulaire, les différents titres, le nombre d'étapes qu'il lui reste, un circular progress, les états des étapes, etc).
 
-## 🌐 J'utilise des ressources
 
-- [Stackoverflow](https://stackoverflow.com) : utilisation lors de problèmes que je n'arrive pas à résoudre moi-même, je regarde si d'autres développeurs ont eu le même problème et comment ils l'ont résolus.
-- [Medium](https://medium.com) : veille journalière sur des articles liés au développement. Pour cela, je suis inscrite à une newsletter qui présente les meilleurs articles du jour.
+## 🌐 J'utilise des ressources
+### [Stackoverflow](https://stackoverflow.com)
+- utilisation lors de problèmes que je n'arrive pas à résoudre moi-même, je regarde si d'autres développeurs ont eu le même problème et comment ils l'ont résolus.
+### [Medium](https://medium.com)
+- veille journalière sur des articles liés au développement. Pour cela, je suis inscrite à une newsletter qui présente les meilleurs articles du jour.
+
 
 ## 🚧 Je franchis les obstacles
+### Point de blocage ❌ 
 
-### Point de blocage ❌ / ✔️
 
-Description:
-
-Plan d'action : (à valider par le formateur)
-
-- action 1 ❌ / ✔️
-- action 2 ❌ / ✔️
-- ...
-
-Résolution :
-
-## 📽️ J'en fais la démonstration
-
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](https://gist.github.com/mathildetho/2a4d6c74aaf20f9a9b40dbaf5026833b "description des memoize hooks") ✔️
+## 📽️ J'en fais la démonstration  ✔️
+- J'ai fait une [présentation](https://gist.github.com/mathildetho/2a4d6c74aaf20f9a9b40dbaf5026833b "description des memoize hooks")
