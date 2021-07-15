@@ -18,6 +18,7 @@
 ### Un exemple de code commenté ✔️
 
 ```javascript
+
 const handleSubmit = (event) => {
   event.preventDefault();
   axios.post("/boudu/admin/restaurateurs", {
@@ -27,6 +28,7 @@ const handleSubmit = (event) => {
     mail,
   });
 };
+
 //petit handleSubmit avec event en paramètre pour eviter le refresh de la page
 ```
 

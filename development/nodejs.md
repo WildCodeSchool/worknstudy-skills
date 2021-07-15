@@ -17,30 +17,73 @@
 
 ### Un exemple personnel commenté  ✔️
 
-```javascript
-// get restaurant by id
-router.get('/:id', (req, res) => {
-  const { id } = req.params;
-  const query = 'SELECT * FROM Restaurant WHERE id= ?';
-  connection.query(query, id, (err, results) => {
-    if (err) {
-      res.status(500).send('Erreur lors de la récupération des informations sur les restaurants');
-    } else {
-      res.json(results);
-    }
-  });
-});
+```ts
+
+//un server express
+export const getExpressServer = async (): Promise<{
+  expressServer: Application;
+  apolloServer: ApolloServer;
+  graphQLSchema: GraphQLSchema;
+}> => {
+  const { apolloServer, graphQLSchema } = await getApolloServer();
+
+  const expressServer = express()
+    .use(cookieParser())
+    .use(graphqlUploadExpress({ maxFileSize: 10000000, maxFiles: 10 }))
+    .use('/public', express.static(path.join(__dirname, '..', 'public')));
+  apolloServer.applyMiddleware({ app: expressServer });
+
+  return { expressServer, apolloServer, graphQLSchema };
+};
+
 ```
 
 ### Utilisation dans un projet  ✔️
 
-[lien github](https://github.com/WildCodeSchool/tlse-0919-js-boudu)
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
 
 Description :
 
 ### Utilisation en production si applicable ✔️
 
-[lien du projet](...)
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
+
+```ts
+
+// connexion au back
+const main = async () => {
+  const connectionOptions = await getConnectionOptions();
+  await createConnection({
+    ...connectionOptions,
+    synchronize: true,
+    entities: ['dist/models/*.js'],
+  });
+
+  const { expressServer, apolloServer, graphQLSchema } =
+    await getExpressServer();
+
+  const server = createServer(expressServer);
+  server.listen(4000, () => {
+    console.log(
+      `🚀 Server ready at http://localhost:4000${apolloServer.graphqlPath}`
+    );
+    new SubscriptionServer(
+      {
+        execute,
+        subscribe,
+        schema: graphQLSchema,
+      },
+      {
+        server,
+        path: apolloServer.graphqlPath,
+      }
+    );
+  });
+};
+
+main();
+
+```
 
 Description : au sein de ma boite mais pas d'exemple sous la main
 
