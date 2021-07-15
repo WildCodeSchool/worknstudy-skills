@@ -17,23 +17,111 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+Jest
 
-### Utilisation dans un projet ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
-[lien github](...)
+```tsx
 
-Description :
+describe('User resolvers', () => {
+  let testClient;
 
-### Utilisation en production si applicable❌ / ✔️
+  beforeEach(async () => {
+    const connectionOptions = await getConnectionOptions();
+    await createConnection({
+      ...connectionOptions,
+      dropSchema: true,
+      entities: [
+        User,
+        UserSession,
+        Article,
+        Community,
+        Diploma,
+        Experience,
+        ContentField,
+        LikeArticle,
+        CommentaireArticle,
+      ],
+      synchronize: true,
+      logging: false,
+    });
 
-[lien du projet](...)
+    const { expressServer } = await getExpressServer();
 
-Description :
+    testClient = createTestClient(expressServer);
+  });
+
+  afterEach(() => {
+    const conn = getConnection();
+    return conn.close();
+  });
+
+  describe('query me', () => {
+    let user;
+
+    beforeEach(async () => {
+      user = User.create({
+        pseudo: 'jesus',
+        password: 'ilovedevil',
+        email: 'jesus@god.com',
+        bio: 'hell yeah',
+      });
+      await user.save();
+    });
+
+    describe('when user is not authenticated', () => {
+      it('returns error', async () => {
+        const response = await testClient.post('/graphql').send({
+          query: `{
+          me {
+            pseudo
+            userID
+          }
+        }
+        `,
+        });
+        expect(response.text).toMatch('You are not authenticated.');
+      });
+    });
+
+    describe('when user is authenticated', () => {
+      it('returns user', async () => {
+        const currentUserSession = UserSession.create({ user: user });
+        await currentUserSession.save();
+
+        const response = await testClient
+          .post('/graphql')
+          .set('Cookie', [`sessionId=${currentUserSession.uuid}`])
+          .send({
+            query: `{
+              me {
+                pseudo
+              }
+            }
+          `,
+          });
+
+        expect(JSON.parse(response.text).data).toEqual({
+          me: {
+            pseudo: user.pseudo,
+          },
+        });
+      });
+    });
+  });
+});
+
+```
+
+### Utilisation dans un projet ✔️
+
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
+
+### Utilisation en production si applicable ✔️
+
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
 
 ### Utilisation en environement professionnel ❌ / ✔️
-
-Description :
 
 ## 🌐 J'utilise des ressources
 
