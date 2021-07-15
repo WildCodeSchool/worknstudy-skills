@@ -58,25 +58,23 @@ export default React.memo(GalleryRemoteImage)
 
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
 
 Description : uniquement effectué en entreprise
 
-### Utilisation en production si applicable❌ / ✔️
-
-[lien du projet](...)
+### Utilisation en production si applicable ✔️
 
 Description : Eve app (bientôt disponible)
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ✔️
 
 Description : Eve app (bientôt disponible)
 
 ## 🌐 J'utilise des ressources
 
-[Doc React Native](https://reactnative.dev/docs/components-and-apis)
-[Doc React Navigation](https://reactnavigation.org/docs/getting-started)
+- [Doc React Native](https://reactnative.dev/docs/components-and-apis)
+- [Doc React Navigation](https://reactnavigation.org/docs/getting-started)
 ### Titre
 
 - lien

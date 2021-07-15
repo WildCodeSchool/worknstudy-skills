@@ -89,7 +89,7 @@ Description : voici le lien du repo de SkillzShare, le projet de l'année réali
 
 Description : la production de SkillzShare
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ✔️
 
 Développement de la partie front end de Dmitri, un projet pour un client avec l'entreprise
 
@@ -112,22 +112,9 @@ ${UserRolesFragmentDoc}
 ${UserMetadataFragmentDoc}
 ${ParentProfileFragmentDoc}`;
 
-/**
- * __useGetParentQuery__
- *
- * To run a query within a React component, call `useGetParentQuery` and pass it any options that fit your needs.
- * When your component renders, `useGetParentQuery` returns an object from Apollo Client that contains loading, error, and data properties
- * you can use to render your UI.
- *
- * @param baseOptions options that will be passed into the query, supported options are listed on: https://www.apollographql.com/docs/react/api/react-hooks/#options;
- *
- * @example
- * const { data, loading, error } = useGetParentQuery({
- *   variables: {
- *      id: // value for 'id'
- *   },
- * });
- */
+ @param baseOptions
+ @example
+
 export function useGetParentQuery(baseOptions: Apollo.QueryHookOptions<Types.GetParentQuery, Types.GetParentQueryVariables>) {
         const options = {...defaultOptions, ...baseOptions}
         return Apollo.useQuery<Types.GetParentQuery, Types.GetParentQueryVariables>(GetParentDocument, options);

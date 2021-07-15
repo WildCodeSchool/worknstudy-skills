@@ -15,95 +15,27 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
-```ts
-//mapping sur une enum pour rattacher un objet a une variant pour avoir différentes tailles d'avatar et responsives
-export enum AvatarVariants {
-  Small = 'small',
-  Medium = 'medium',
-  Big = 'big',
-}
-
-export interface ISizes {
-  base: string;
-  sm: string;
-  md: string;
-  lg: string;
-  xl: string;
-}
-
-export const avatarSizeMap: Record<AvatarVariants, ISizes | undefined> = {
-  [AvatarVariants.Small]: {
-    base: '30px',
-    sm: '30px',
-    md: '34px',
-    lg: '36px',
-    xl: '38px',
-  },
-  [AvatarVariants.Medium]: {
-    base: '36px',
-    sm: '36px',
-    md: '38px',
-    lg: '42px',
-    xl: '44px',
-  },
-  [AvatarVariants.Big]: {
-    base: '50px',
-    sm: '60px',
-    md: '64px',
-    lg: '70px',
-    xl: '70px',
-  },
-};
-
-type AvatarCustomProps = {
-  variant: 'small' | 'medium' | 'big';
-  avatar: string | null;
-};
-
-const AvatarCustom = (props: AvatarCustomProps) => {
-  const { avatar, variant } = props;
-
-  return (
-    <Avatar
-      src={
-        avatar === null
-          ? undefined
-          : document.location.origin + '/public/media/avatars/' + avatar
-      }
-      w={{
-        base: avatarSizeMap[variant as AvatarVariants]?.base,
-        sm: avatarSizeMap[variant as AvatarVariants]?.sm,
-        md: avatarSizeMap[variant as AvatarVariants]?.md,
-        lg: avatarSizeMap[variant as AvatarVariants]?.lg,
-        xl: avatarSizeMap[variant as AvatarVariants]?.xl,
-      }}
-      h={{
-        base: avatarSizeMap[variant as AvatarVariants]?.base,
-        sm: avatarSizeMap[variant as AvatarVariants]?.sm,
-        md: avatarSizeMap[variant as AvatarVariants]?.md,
-        lg: avatarSizeMap[variant as AvatarVariants]?.lg,
-        xl: avatarSizeMap[variant as AvatarVariants]?.xl,
-      }}
-    />
-  );
-};
-
-export default AvatarCustom;
-
-
+```tsx
+  //un handle change generique pour modifiier un state User
+  
+  const [user, setUser] = useState<User>(defaultUser);
+  const onUserChange = <P extends keyof User>(prop: P, value: User[P]) => {
+    setUser({ ...user, [prop]: value });
+  };
+  
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
 [SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
 
-### Utilisation en production si applicable❌ / ✔️
+### Utilisation en production si applicable ✔️
 
 [SkillzShare](https://skillzshare.wns.wilders.dev/)
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ✔️
 
 ```ts
 //exemples de types en unviers professionels
