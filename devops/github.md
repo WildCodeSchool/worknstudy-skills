@@ -19,28 +19,28 @@
 ### Un exemple personnel commenté ✔️
 
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
 [lien github](https://github.com/guigzzz31/vitrine-next-material-ui)
 
 Description :
 dans ce projet chaque branch a un préfixe feature/ refactor/ debug/ hotFix/ suivant la nature du dev à effectuer
 
-### Utilisation en production si applicable❌ / ✔️
+### Utilisation en production si applicable ✔️
 
-[lien du projet](...)
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
 
-Description :
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
+
+Utilisation d'un webhook pour que le server pull main lorsque l'on push sur main depuis notre local
 
 ### Utilisation en environement professionnel ❌ / ✔️
 
-Description :
-
 ## 🌐 J'utilise des ressources
 
+-[NextJs](https://nextjs.org/) 
+-[Material-ui](https://material-ui.com/getting-started/installation/)
 ### Titre
-
--[NextJs](https://nextjs.org/) -[Material-ui](https://material-ui.com/getting-started/installation/)
 
 ## 🚧 Je franchis les obstacles
 
