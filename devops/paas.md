@@ -8,31 +8,57 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- ce que c'est ❌ / ✔️
-- comment deployer une application sur une PaaS ❌ / ✔️
+- ce que c'est ✔️
+- comment deployer une application sur une PaaS ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
-### Utilisation dans un projet ❌ / ✔️
+Caddyfile de notre projet
 
-[lien github](...)
+skillzshare.wns.wilders.dev {
+   reverse_proxy localhost:8000
 
-Description :
+   log {
+     output file /var/log/caddy/demo.log
+   }
+}
 
-### Utilisation en production si applicable❌ / ✔️
 
-[lien du projet](...)
+staging.skillzshare.wns.wilders.dev {
+   reverse_proxy localhost:8001
 
-Description :
+   log {
+     output file /var/log/caddy/staging-demo.log
+   }
+}
+
+
+ops.skillzshare.wns.wilders.dev {
+   reverse_proxy /hooks/* localhost:9000
+
+   log {
+     output file /var/log/caddy/webhooks.log
+   }
+}
+
+
+### Utilisation dans un projet ✔️
+
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
+
+
+### Utilisation en production si applicable ✔️
+
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
 
 ### Utilisation en environement professionnel ❌ / ✔️
 
-Description :
 
 ## 🌐 J'utilise des ressources
 
+- [caddy](https://caddyserver.com/v2)
 ### Titre
 
 - lien
