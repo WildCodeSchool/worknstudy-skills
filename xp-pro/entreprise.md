@@ -1,11 +1,16 @@
 # Le nom de l'entreprise
 
-Sans entreprise pendant ces 3 dernières semaines j'ai réaliser le site statique d'une amie podologue en NextJs, React et full material-ui
+La Forge
 
 ## L'activité principale
 
-> Décris en quelques lignes l'activité principale de l'entreprise
+Entreprise de services, proposant la réalisations de sites internet & d'application mobiles.
+De la maquette au data model en passant par l'interface :)
 
 ## Ton équipe
 
-> Décris l'équipe avec laquelle tu travailles, les différents postes et ton interaction avec ces postes.
+1 pôle design
+1 pôle developpement
+1 pôle relation client / com
+
+Superbe équipe ou tous les pôles travaillent ensemble; ambiance générale décontractée
