@@ -22,26 +22,61 @@
 
 ```tsx
 //un composant 
+type Props = {
+	onPressImage: (image: MediaFile) => void
+	image: MediaFile
+}
+
+//Component GalleryItem to render images coming from back (MediaFile)
+const GalleryRemoteImage: React.FC<Props> = ({ onPressImage, image }) => {
+	const theme = useTheme()
+	const styles = useMemo(() => themedStyles(theme), [theme])
+	const [checked, setChecked] = useState(false)
+
+	const availableWidth = theme.windowWidth - 64
+	const imageSize = availableWidth / 4
+
+	const onPress = () => {
+		setChecked(!checked)
+		onPressImage(image)
+	}
+
+	return <Box p={4}>
+		<TouchableOpacity onPress={onPress}>
+			<EveCheck style={{ position: "absolute", zIndex: 9, top: 6, right: 6 }} checked={checked} />
+			<EveCachedImage noCache style={{ width: imageSize, height: imageSize, borderRadius: 14 }} uri={image.file ? image.file : ""} />
+		</TouchableOpacity>
+	</Box>
+}
+
+const themedStyles = (theme: Theme) => StyleSheet.create({
+
+})
+
+
+export default React.memo(GalleryRemoteImage)
+
 ```
 
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
 
-Description :
+Description : uniquement effectué en entreprise
 
 ### Utilisation en production si applicable❌ / ✔️
 
 [lien du projet](...)
 
-Description :
+Description : Eve app (bientôt disponible)
 
 ### Utilisation en environement professionnel ❌ / ✔️
 
-Description :
+Description : Eve app (bientôt disponible)
 
 ## 🌐 J'utilise des ressources
 
+[Doc React Native](https://reactnative.dev/docs/components-and-apis)
+[Doc React Navigation](https://reactnavigation.org/docs/getting-started)
 ### Titre
 
 - lien
