@@ -10,7 +10,7 @@
 
 - les tests unitaires ❌ / ✔️
 - les mocks ❌ / ✔️
-- les tests d'integration ❌ / ✔️
+- les tests d'integration ✔️
 - les tests de bout en bout (end to end) ❌ / ✔️
 - le TDD ❌ / ✔️
 - les tests par snapshot ❌ / ✔️
@@ -22,7 +22,7 @@ Jest
 ### Un exemple personnel commenté ✔️
 
 ```tsx
-
+//tests d'intégration
 describe('User resolvers', () => {
   let testClient;
 
