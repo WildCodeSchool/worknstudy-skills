@@ -7,7 +7,7 @@
 - [Dev Frontend `React`](development/react.md)
 - [Dev Mobile `React Native`](development/react-native.md)
 - [Gestion de projet `SCRUM`](development/scrum.md)
-- [Langage `TypeScript`](development/langage-typrescript.md)
+- [Langage `TypeScript`](development/langage-typescript.md)
 - [Sécurité](development/secu.md)
 
 ## 🧭 Architecture
