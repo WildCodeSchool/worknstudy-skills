@@ -28,23 +28,23 @@
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌
+### Un exemple personnel commenté ✔️
 
 https://docs.google.com/spreadsheets/d/1wJA6n1XIZ5OsbLMDqCSs7M3wY761-Tafguaw2tRGLfg/edit#gid=0
 
-### Utilisation dans un projet ❌
+### Utilisation dans un projet ✔️
 
 [lien (screenshot/photos)](https://docs.google.com/spreadsheets/d/1wJA6n1XIZ5OsbLMDqCSs7M3wY761-Tafguaw2tRGLfg/edit#gid=0)
 
 Description : Projet 2 de la wild - promo sept 2020
 
-### Utilisation en production si applicable❌
+### Utilisation en production si applicable ✔️
 
 [lien (screenshot/photos)](https://docs.google.com/spreadsheets/d/1wJA6n1XIZ5OsbLMDqCSs7M3wY761-Tafguaw2tRGLfg/edit#gid=0)
 
 Description : Projet 2 de la wild - promo sept 2020
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel  ✔️
 
 [lien (screenshot/photos)](https://docs.google.com/spreadsheets/d/1wJA6n1XIZ5OsbLMDqCSs7M3wY761-Tafguaw2tRGLfg/edit#gid=0)
 

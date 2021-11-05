@@ -8,31 +8,39 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- la création d'une image docker ❌
+- la création d'une image docker ✔️
 - l'éxécution d'un container ✔️
 - l'orchestration de containers avec docker-compose ❌
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌
+### Un exemple personnel commenté ✔️
 
 ```
-docker exec -it <Mon image>
+#!/bin/bash
+docker run -it --name dev -p 8080:8080 -p 80:80 -p 443:443 \
+            -v dev_data:/NNvision/media_root \
+            -v dev_db_12:/var/lib/postgresql/12/main \
+            -v /home/cedric/PycharmProjects/django:/NNvision/django \
+            -v /backup_local:/backup \
+            -v dev_cron:/var/spool/cron/crontabs --rm dev:latest bash
+
+
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
 [lien github](https://github.com/Protecia/django)
 
 Description : stage en alternance
 
-### Utilisation en production si applicable❌ / ✔️
+### Utilisation en production si applicable ✔️
 
 [lien github](https://github.com/Protecia/django)
 
 Description : stage en alternance
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel ✔️
 
 [lien github](https://github.com/Protecia/django)
 

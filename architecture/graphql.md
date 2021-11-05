@@ -8,22 +8,48 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- la différence entre REST et GraphQL ❌
-- les besoins auxquels répond GraphQL ❌
-- la définition d'un schéma ❌
-- Query ❌
-- Mutation ❌
+- la différence entre REST et GraphQL ✔️
+- les besoins auxquels répond GraphQL ✔️
+- la définition d'un schéma ✔️
+- Query ✔️
+- Mutation ✔️
 - Subscription ❌
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌
+### Un exemple personnel commenté ✔️
 
-### Utilisation dans un projet ❌
+```
+import { gql } from "@apollo/client";
 
-[lien github](...)
+import { ExpeditionFragment } from "../fragments";
 
-Description :
+export const QUERY_GET_ONE_EXPEDITION = gql`
+  query oneExpedition($id: ID!) {
+    oneExpedition(id: $id) {
+      ...ExpeditionFragment
+    }
+  }
+  ${ExpeditionFragment}
+`;
+
+export const QUERY_GET_EXPEDITIONS = gql`
+  query allExpeditions {
+    allExpeditions {
+      ...ExpeditionFragment
+    }
+  }
+  ${ExpeditionFragment}
+`;
+```
+
+Ici on peut voir 2 querys : une pour récupérer une expedition avec son id et l'autres pour récupérer toute les expéditions
+
+### Utilisation dans un projet ✔️
+
+[lien github](https://github.com/wild-projet/2104-wns-lyon-groupe4-front)
+
+Description : projet alternance
 
 ### Utilisation en production si applicable❌
 

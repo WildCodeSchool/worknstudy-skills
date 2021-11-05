@@ -86,8 +86,8 @@ Description: l'asynchronisme, hooks et useEffect
 
 Plan d'action : (à valider par le formateur)
 
-- action 1 ❌ / ✔️
-- action 2 ❌ / ✔️
+- action 1 faire un custom hook ✔️
+- action 2 approfondir l'asynchronisme et le useEffect ❌ 
 - ...
 
 Résolution :

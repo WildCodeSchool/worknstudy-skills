@@ -12,7 +12,7 @@
 - les composants enfants et les _props_ qu'on leur passe ✔️
 - le déclenchement d'instructions en fonction des actions de l'utilisateur ✔️
 - le déclenchement d'instructions en fonction de l'étape du cycle de vie du composant ou du changement de valeur de ses props ✔️
-- l'usage d'un reducer (_useReducer_) pour gérer un état composé dans un composant ❌
+- l'usage d'un reducer (_useReducer_) pour gérer un état composé dans un composant ✔️
 - l'état stocké dans un composant avec un _context provider_ et accessible dans ses descendants via `useContext` ✔️
 
 ## 💻 J'utilise
@@ -90,7 +90,7 @@ const CampaignDetail = (props) => {
   }, []);
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet  ✔️
 
 [lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-front-office)
 
@@ -121,8 +121,8 @@ Description: cycle de vie à approfondir
 
 Plan d'action : (à valider par le formateur)
 
-- action 1 ❌ / ✔️
-- action 2 ❌ / ✔️
+- action 1 cycle de vie à approfondir ❌ 
+- action 2 Terminer la quête sur useReducer ✔️
 - ...
 
 Résolution :

@@ -8,20 +8,26 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- l'intéret de TypeScript dans l'IDE ❌
+- l'intéret de TypeScript dans l'IDE ✔️
 - les types de bases ✔️
-- comment et pourquoi étendre une interface✔️ ❌
-- les classes et les decorators ❌
+- comment et pourquoi étendre une interface ✔️
+- les classes et les decorators ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌
+### Un exemple personnel commenté
 
 ### Utilisation dans un projet ❌
 
-[lien github](...)
+[lien github](https://github.com/WildCodeSchool/2021-04-remote-lyon-general-repo)
 
-Description :
+```javascript
+function withHeaderAndFooter(ComponentWithoutHeaderAndFooter: React.FC) {
+...
+}
+```
+
+Description : projet alternance
 
 ### Utilisation en production si applicable❌
 
@@ -48,7 +54,7 @@ Description: ne connais pas du tout
 
 Plan d'action : (à valider par le formateur)
 
-- action 1 ❌ / ✔️
+- action 1 continuer d'approfondir en utilisant TS sur notre projet ✔️
 - action 2 ❌ / ✔️
 - ...
 

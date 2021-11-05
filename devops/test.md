@@ -11,7 +11,7 @@
 - les tests unitaires ✔️
 - les mocks ❌
 - les tests d'integration ✔️
-- les tests de bout en bout (end to end) ❌
+- les tests de bout en bout (end to end) ✔️
 - le TDD ✔️
 - les tests par snapshot ❌
 
@@ -111,7 +111,7 @@ done();
 
 Description :
 
-### Utilisation en production si applicable❌
+### Utilisation en production si applicable ❌
 
 [lien du projet](...)
 
@@ -136,7 +136,7 @@ Description:
 
 Plan d'action : (à valider par le formateur)
 
-- action 1 ❌ / ✔️
+- action 1 essayer de faire des tests sur notre projet ❌
 - action 2 ❌ / ✔️
 - ...
 
