@@ -18,53 +18,59 @@
 
 ### Un exemple personnel commenté ✔️
 
-```
-const campaignsRouter = require('express').Router();
+```javascript
+const campaignsRouter = require("express").Router();
 
-const asyncHandler = require('express-async-handler');
-const campaignsController = require('../controllers/campaigns');
-const handleTextUpload = require('../middlewares/handleTextUpload');
-const handleUserConfirmed = require('../middlewares/handleUserConfirmed');
+const asyncHandler = require("express-async-handler");
+const campaignsController = require("../controllers/campaigns");
+const handleTextUpload = require("../middlewares/handleTextUpload");
+const handleUserConfirmed = require("../middlewares/handleUserConfirmed");
+
+// Pour certaines routes, on utilise en plus des middlewares,
+// ceci afin de procéder à des vérification en amont
 
 campaignsRouter.get(
-  '/downloadaudio',
+  "/downloadaudio",
   asyncHandler(campaignsController.downloadAudio)
 );
 
-campaignsRouter.get('/video', asyncHandler(campaignsController.video));
+// Voici une route GET sur le path '/downloadaudio',
+// elle appelle le controlleur campaignsController.downloadAudio
 
-campaignsRouter.get('/', asyncHandler(campaignsController.getCollection));
-campaignsRouter.get('/audio', asyncHandler(campaignsController.playAudio));
+campaignsRouter.get("/video", asyncHandler(campaignsController.video));
+
+campaignsRouter.get("/", asyncHandler(campaignsController.getCollection));
+campaignsRouter.get("/audio", asyncHandler(campaignsController.playAudio));
 campaignsRouter.get(
-  '/:campaignId',
+  "/:campaignId",
   asyncHandler(campaignsController.getOneCampaign)
 );
 
 campaignsRouter.post(
-  '/',
+  "/",
   handleUserConfirmed,
   asyncHandler(campaignsController.createCampaignId)
 );
 campaignsRouter.post(
-  '/uploadtext',
+  "/uploadtext",
   handleTextUpload,
   asyncHandler(campaignsController.readText)
 );
 
-campaignsRouter.post('/TTS', asyncHandler(campaignsController.vocalization));
+campaignsRouter.post("/TTS", asyncHandler(campaignsController.vocalization));
 
 campaignsRouter.put(
-  '/:campaignId',
+  "/:campaignId",
   asyncHandler(campaignsController.updateCampaign)
 );
 
 campaignsRouter.put(
-  '/:campaignId/stop',
+  "/:campaignId/stop",
   asyncHandler(campaignsController.stopCampaign)
 );
 
 campaignsRouter.delete(
-  '/:campaignId',
+  "/:campaignId",
   asyncHandler(campaignsController.deleteCampaign)
 );
 ```

@@ -13,7 +13,7 @@
 - la définition d'un schéma ✔️
 - Query ✔️
 - Mutation ✔️
-- Subscription ❌
+- Subscription ✔️
 
 ## 💻 J'utilise
 
@@ -32,6 +32,8 @@ export const QUERY_GET_ONE_EXPEDITION = gql`
   }
   ${ExpeditionFragment}
 `;
+// Ici on définit une query oneExpedition avec paramètre obligatoire
+// Celle-ci retournera une expédition avec les champs spécifiés dans ExpeditionFragment
 
 export const QUERY_GET_EXPEDITIONS = gql`
   query allExpeditions {
@@ -43,7 +45,7 @@ export const QUERY_GET_EXPEDITIONS = gql`
 `;
 ```
 
-Ici on peut voir 2 querys : une pour récupérer une expedition avec son id et l'autres pour récupérer toute les expéditions
+// Ici on peut voir 2 querys : une pour récupérer une expedition avec son id et l'autres pour récupérer toute les expéditions
 
 ### Utilisation dans un projet ✔️
 

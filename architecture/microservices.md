@@ -9,8 +9,8 @@
 ## 🎓 J'ai compris et je peux expliquer
 
 - les différences avec l'architecture monolithique ✔️
-- la communication asynchrone entre services ❌
-- le deploiement d'un cluster ❌
+- la communication asynchrone entre services ✔️
+- le deploiement d'un cluster ✔️
 
 ## 💻 J'utilise
 
@@ -18,21 +18,15 @@
 
 ### Utilisation dans un projet ✔
 
-[lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
-
-Description : projet 3 de la wild promo sept 2020
+[lien github]
 
 ### Utilisation en production si applicable❌ / ✔️
 
-[lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
-
-Description : projet 3 de la wild promo sept 2020
+[lien github])
 
 ### Utilisation en environement professionnel ❌ / ✔️
 
-[lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-api)
-
-Description : projet 3 de la wild promo sept 2020
+[lien github]
 
 ## 🌐 J'utilise des ressources
 

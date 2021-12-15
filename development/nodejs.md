@@ -27,12 +27,18 @@ const {
   MAIL_CLIENT_URL,
 } = require("../env");
 
+// Cette fonction asynchrone est utilisée pour trouver un user par mail.
+
 module.exports.login = async (req, res) => {
   const user = await User.findByEmail(req.body.email, false);
   if (
     user &&
+    // On attends de vérifier que le password du User correspond bien au password de la BDD
+
     (await User.verifyPassword(user.encrypted_password, req.body.password))
   ) {
+    // Si le user a cliquer sur "rester connecter", alors on lui octtroi un cookie
+
     if (req.body.stayConnected) {
       req.session.cookie.maxAge = 7 * 24 * 60 * 60 * 1000;
     }
@@ -46,6 +52,9 @@ module.exports.login = async (req, res) => {
         lastname: user.lastname,
         role: user.role,
       };
+
+      // Si tout est OK, alors on renvoit au format json les détails liés à l'utilisateur
+
       return res.status(200).json(userDetails);
     });
   } else {

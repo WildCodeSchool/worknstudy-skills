@@ -22,9 +22,24 @@
 [lien github](https://github.com/WildCodeSchool/2021-04-remote-lyon-general-repo)
 
 ```javascript
-function withHeaderAndFooter(ComponentWithoutHeaderAndFooter: React.FC) {
-...
+// Ici on peut voir une interface
+
+interface ExerciseDescription {
+  title: string;
+  language: string;
+  level: string;
+  visibleBy: string;
 }
+
+// le state exerciseDescription possède l'interface exerciseDescription
+// Ainsi exerciseDescription possède
+//   un title de type string;
+//   un language de type string;
+//   un level de type string;
+//   un visibleBy de type string;
+
+const [exerciseDescription, setExerciseDescription] =
+  useState < ExerciseDescription > initialDescription;
 ```
 
 Description : projet alternance

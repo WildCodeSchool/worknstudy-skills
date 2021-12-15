@@ -19,7 +19,8 @@
 
 ### Un exemple personnel commenté ✔️
 
-```
+```javascript
+
 /* eslint-disable no-nested-ternary */
 import React, { useContext, useEffect, useState } from 'react';
 import './CampaignDetails.scss';
@@ -34,12 +35,16 @@ import API from '../../services/API';
 import { UserContext } from '../../context/UserContext';
 import CampaignDetailsChart from './CampaignDetailsChart';
 
+// Cette fonction prends en apramètre des props
+
 const CampaignDetail = (props) => {
   moment.locale('fr');
 
   const { userDetails, setUserDetails } = useContext(UserContext);
   const { match } = props;
   const history = useHistory();
+
+  // Ici on initialise 3 states
 
   const [currentCampaign, setCurrentCampaign, setLoggedIn] = useState({
     id: 0,
@@ -58,15 +63,22 @@ const CampaignDetail = (props) => {
   const [campaignContacts, setCampaignContacts] = useState();
   const [winRate, setWinRate] = useState(0);
 
+  // Ce useEffect a comme tableau de dépendance cuurentCampaign
+
   useEffect(() => {
     setWinRate(currentCampaign.call_success_count / currentCampaign.count);
   }, [currentCampaign]);
+
+  // On fait un Get vers le back en précisant des id spécifiques en params dans l'URL
 
   useEffect(() => {
     API.get(`/users/${userDetails.id}/campaigns/${match.params.campaign_id}`)
       .then((res) => {
         setCurrentCampaign(res.data);
       })
+
+      // history.push('/signin') permet de rediriger le user vers le path /signin
+
       .catch((err) => {
         if (err.response.status === 401) {
           setLoggedIn(false);
@@ -74,6 +86,10 @@ const CampaignDetail = (props) => {
           history.push('/signin');
         }
       });
+
+  // Idem :on fait un Get vers le back en précisant des id spécifiques en params dans l'URL
+
+
     API.get(
       `/users/${userDetails.id}/campaigns/${match.params.campaign_id}/contacts`
     )
@@ -90,7 +106,7 @@ const CampaignDetail = (props) => {
   }, []);
 ```
 
-### Utilisation dans un projet  ✔️
+### Utilisation dans un projet ✔️
 
 [lien github](https://github.com/WildCodeSchool/lyon-js-sept2020-p3-lafrica-front-office)
 
@@ -121,7 +137,7 @@ Description: cycle de vie à approfondir
 
 Plan d'action : (à valider par le formateur)
 
-- action 1 cycle de vie à approfondir ❌ 
+- action 1 cycle de vie à approfondir ❌
 - action 2 Terminer la quête sur useReducer ✔️
 - ...
 
