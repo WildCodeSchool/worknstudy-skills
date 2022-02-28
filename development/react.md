@@ -4,8 +4,6 @@
 
 > ✔️ Auto validation par l'étudiant
 
-> 👌 Validation par le formateur
-
 ## 🎓 J'ai compris et je peux expliquer
 
 - l'état (_state_) pour contrôler l'affichage d'un composant ❌ / ✔️
