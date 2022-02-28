@@ -4,8 +4,6 @@
 
 > ✔️ Auto validation par l'étudiant
 
-> 👌 Validation par le formateur
-
 ## 🎓 J'ai compris et je peux expliquer
 
 - Comment développer en utilisant un système de *livereloading* (`nodemon` par exemple) ❌ / ✔️
