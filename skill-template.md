@@ -4,8 +4,6 @@
 
 > ✔️ Auto validation par l'étudiant
 
-> 👌 Validation par le formateur
-
 ## 🎓 J'ai compris et je peux expliquer
 
 - notion 1 ❌ / ✔️
