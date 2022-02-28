@@ -4,8 +4,6 @@
 
 > ✔️ Auto validation par l'étudiant
 
-> 👌 Validation par le formateur
-
 ## 🎓 J'ai compris et je peux expliquer
 
 - les différences entre les webapps, les applications hybrides et natives ❌ / ✔️
