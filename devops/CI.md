@@ -6,16 +6,20 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les enjeux de l'integration continue ❌ / ✔️
-- la mise en place d'une github action ❌ / ✔️
+- les enjeux de l'integration continue  ✔️
+- la mise en place d'une github action ❌ 
 
 ## 💻 J'utilise
 
+Lintégration en continue permet de développer un site ou une application point par point notamement en tirant des branches sur GitHub.
+
 ### Un exemple personnel commenté ❌ / ✔️
+
+Développement d'un projet pour le checkpoint 4 (voir le lien GitHub ci dessous) étape par étape.
 
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+[lien github](https://github.com/julienWillette/wine.git)
 
 Description :
 

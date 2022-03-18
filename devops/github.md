@@ -6,19 +6,21 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- l'initialisation d'un projet ❌ / ✔️
-- travailler avec des branches ❌ / ✔️
-- faire une PR ❌ / ✔️
-- utiliser git rebase pour faire des commits propres ❌ / ✔️
-- utiliser les gitHub actions ❌ / ✔️
+- l'initialisation d'un projet ✔️
+- travailler avec des branches ✔️
+- faire une PR ✔️
+- utiliser git rebase pour faire des commits propres ❌ 
+- utiliser les gitHub actions ❌ 
 
 ## 💻 J'utilise
 
 ### Un exemple personnel commenté ❌ / ✔️
 
+Lors de ma précédente formation j'ai réalisé un checkpoint pour j'ai initialisé un projet sur GitHub, j'ai tirer un branche Dev, et puis j'ai tirer des branches de Dev pour travailler chaque point. En pouchant mes branches sur dev, j'ai réalisé des PR. 
+
 ### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+[lien github](https://github.com/julienWillette/wine.git)
 
 Description :
 
