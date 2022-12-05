@@ -6,17 +6,17 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les verbes HTTP ❌ / ✔️
-- les statuts HTTP ❌ / ✔️
-- les endpoints ❌ / ✔️
-- CORS ❌ / ✔️
-- la nomenclature recommandée pour les routes ❌ / ✔️
+- les verbes HTTP ❌ 
+- les statuts HTTP  ✔️
+- les endpoints ❌ 
+- CORS ❌ je connais vaguement Nelmio Cors pour Symfony
+- la nomenclature recommandée pour les routes  ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ❌ 
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet  ✔️
 
 [lien github](...)
 
@@ -24,24 +24,24 @@ Description :
 
 ### Utilisation en production si applicable❌ / ✔️
 
-[lien du projet](...)
+[lien du projet] https://github.com/Aurel-GitHub/Symfony_api
 
-Description :
+Description :API faite par moi meme (CRUD) d'un blog, j'ai utilisé les services de base Symfony sans JMS serializer et FOSTrestBundle
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en environement professionnel  ✔️
 
-Description :
+Description :  Envoi de donnée et réception de donnée sur API via Insomnia Core
 
 ## 🌐 J'utilise des ressources
 
 ### Titre
 
-- lien
+- lien https://www.accesscodeschool.fr/2019/01/17/concevoir-une-api-rest-avec-php/
 - description
 
 ## 🚧 Je franchis les obstacles
 
-### Point de blocage ❌ / ✔️
+### Point de blocage ❌ 
 
 Description:
 
@@ -55,5 +55,5 @@ Résolution :
 
 ## 📽️ J'en fais la démonstration
 
-- J'ai ecrit un [tutoriel](...) ❌ / ✔️
-- J'ai fait une [présentation](...) ❌ / ✔️
+- J'ai ecrit un [tutoriel](...) ❌
+- J'ai fait une [présentation](...) ❌ 
