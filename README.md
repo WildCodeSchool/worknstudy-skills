@@ -29,7 +29,3 @@
 
 - [Mon entreprise](xp-pro/entreprise.md)
 - [Période du xxx au xxx](xp-pro/experience-1.md)
-
-## ℹ️ Aide
-
-- [Comment mettre à jour mon carnet de compétences](help/how-to-update.md)
