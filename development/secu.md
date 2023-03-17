@@ -6,10 +6,10 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- Le rôle de l'OWASP ❌ / ✔️
-- Les injections SQL ❌ / ✔️
-- XSS ❌ / ✔️
-- CRSF ❌ / ✔️
+- Le rôle de l'OWASP ✔️
+- Les injections SQL ✔️
+- XSS ✔️
+- CRSF ✔️
 
 ## 💻 J'utilise
 

@@ -6,38 +6,39 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- l'initialisation d'un projet ❌ / ✔️
-- travailler avec des branches ❌ / ✔️
-- faire une PR ❌ / ✔️
-- utiliser git rebase pour faire des commits propres ❌ / ✔️
+- l'initialisation d'un projet ✔️
+- travailler avec des branches ✔️
+- faire une PR ✔️
+- utiliser git rebase pour faire des commits propres ✔️
 - utiliser les gitHub actions ❌ / ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté ✔️
 
-### Utilisation dans un projet ❌ / ✔️
 
-[lien github](...)
+### Utilisation dans un projet ✔️
 
-Description :
-
-### Utilisation en production si applicable❌ / ✔️
-
-[lien du projet](...)
+[lien github](https://github.com/guigzzz31/vitrine-next-material-ui)
 
 Description :
+dans ce projet chaque branch a un préfixe feature/ refactor/ debug/ hotFix/ suivant la nature du dev à effectuer
+
+### Utilisation en production si applicable ✔️
+
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
+
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
+
+Utilisation d'un webhook pour que le server pull main lorsque l'on push sur main depuis notre local
 
 ### Utilisation en environement professionnel ❌ / ✔️
 
-Description :
-
 ## 🌐 J'utilise des ressources
 
+-[NextJs](https://nextjs.org/) 
+-[Material-ui](https://material-ui.com/getting-started/installation/)
 ### Titre
-
-- lien
-- description
 
 ## 🚧 Je franchis les obstacles
 

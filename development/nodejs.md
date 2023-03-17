@@ -6,43 +6,95 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- Comment développer en utilisant un système de *livereloading* (`nodemon` par exemple) ❌ / ✔️
-- La connexion de mon application à une base de données avec et sans ORM/ODM (avec `mongodb` puis `mongoose` par exemple) ❌ / ✔️
-- Le développement d'une API REST et GraphQL (avec les packages `express` et `graphql` par exemple) ❌ / ✔️
+- Comment développer en utilisant un système de *livereloading* (`nodemon` par exemple) ✔️
+- La connexion de mon application à une base de données avec et sans ORM/ODM (avec `mongodb` puis `mongoose` par exemple) ✔️
+- Le développement d'une API REST et GraphQL (avec les packages `express` et `graphql` par exemple)  ✔️
 - *Bonus : la manipulation des fichiers système avec `fs` et l'utilisation des streams en NodeJS* ❌ / ✔️
 
 ## 💻 J'utilise
 
-### Un exemple personnel commenté ❌ / ✔️
+### Un exemple personnel commenté  ✔️
 
-```javascript
-// this function takes a path to a .md file of the host system and write the HTML version of this file
-// the .html file is given back
-const convertMDFileToHTML = (pathToMDfile) => /* ... path to HTML file */
+```ts
+
+//un server express
+export const getExpressServer = async (): Promise<{
+  expressServer: Application;
+  apolloServer: ApolloServer;
+  graphQLSchema: GraphQLSchema;
+}> => {
+  const { apolloServer, graphQLSchema } = await getApolloServer();
+
+  const expressServer = express()
+    .use(cookieParser())
+    .use(graphqlUploadExpress({ maxFileSize: 10000000, maxFiles: 10 }))
+    .use('/public', express.static(path.join(__dirname, '..', 'public')));
+  apolloServer.applyMiddleware({ app: expressServer });
+
+  return { expressServer, apolloServer, graphQLSchema };
+};
+
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet  ✔️
 
-[lien github](...)
-
-Description :
-
-### Utilisation en production si applicable❌ / ✔️
-
-[lien du projet](...)
+[SkillzShare](https://github.com/WildCodeSchool/2020-11-wns-remote2-groupe5-projet)
 
 Description :
 
-### Utilisation en environement professionnel ❌ / ✔️
+### Utilisation en production si applicable ✔️
 
-Description :
+[SkillzShare](https://skillzshare.wns.wilders.dev/)
+
+```ts
+
+// connexion au back
+const main = async () => {
+  const connectionOptions = await getConnectionOptions();
+  await createConnection({
+    ...connectionOptions,
+    synchronize: true,
+    entities: ['dist/models/*.js'],
+  });
+
+  const { expressServer, apolloServer, graphQLSchema } =
+    await getExpressServer();
+
+  const server = createServer(expressServer);
+  server.listen(4000, () => {
+    console.log(
+      `🚀 Server ready at http://localhost:4000${apolloServer.graphqlPath}`
+    );
+    new SubscriptionServer(
+      {
+        execute,
+        subscribe,
+        schema: graphQLSchema,
+      },
+      {
+        server,
+        path: apolloServer.graphqlPath,
+      }
+    );
+  });
+};
+
+main();
+
+```
+
+Description : au sein de ma boite mais pas d'exemple sous la main
+
+### Utilisation en environement professionnel ✔️
+
+Description : architecture en package
 
 ## 🌐 J'utilise des ressources
 
 ### Titre
 
-- lien
-- description
+- [la doc](http://expressjs.com/fr/4x/api.html#res)
+- la base
 
 ## 🚧 Je franchis les obstacles
 

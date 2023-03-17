@@ -6,28 +6,53 @@
 
 1. S'agit il de tes premiers jours dans l'entreprise ? (Si non, précise la date d'entrée)
 
+Date d'entrée 06/01/2021, date de sortie 31/10/21
+
 2. Décris comment se déroule la communication avec ton tuteur. (fréquence, valeur de l'aide ajoutée)
+
+Superbe, des reviews a tous les sprint, disponibilité de mes tuteurs quand j'en ai besoin :)
 
 3. Décris ta mission actuelle au sein de l'entreprise
 
+sans mission: création d'un site statique générique à souhait afin de pouvoir me constituer une librairie personelle de composants
+
 4. Qu'est ce qui a bien fonctionné en terme de communication avec ton équipe ?
+
+les daily stand-up quotidiens, les reviews
 
 5. Qu'est ce qui n'a pas bien fonctionné en terme de communication avec le reste de l'équipe ?
 
+parfois l'indisponibilité ou le manque de visibilité
+
 6. Quelle(s) proposition(s) pourrais tu faire pour améliorer ton intégration dans l'équipe ?
+
 
 ## Expérience technique
 
 1. Quel est le projet principal sur lequel tu as travaillé sur cette période. (liste les projets si il y en a plusieurs) ?
 
+Eve App, une application en React Native et Dmitri un webapp en React, le tout sur du typescript
+
 2. Quelle est la tâche la plus intéressante accomplie lors de cette période ?
+
+le developpement de toute la librairie de composants, la refactorisation
 
 3. Ta plus grosse réussite ?
 
+la refactorisation de composants
+
 4. La plus grosse difficulté (echec ou perte de temps) ?
+
+avoir bonne approche de graphql, utiliser le cache a bon escient
 
 5. Quel langage as tu le plus utilisé ?
 
+React, Typescript
+
 6. Quel design pattern as tu pu identifier ?
 
+aucun design pattern...
+
 7. Sur quel point ton formateur ou ton groupe peuvent ils t'aider ?
+
+sur l'appréhension et la réflexion de certains problèmes rencontrés

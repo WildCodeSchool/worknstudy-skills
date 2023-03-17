@@ -6,41 +6,53 @@
 
 ## 🎓 J'ai compris et je peux expliquer
 
-- les `structures` de base du langage ❌ / ✔️
-- les normes `ecmascript` ❌ / ✔️
-- l'utilisation de l'`asynchrone` ❌ / ✔️
-- les spécifités du mot-clef `this` ❌ / ✔️
+- les `structures` de base du langage ✔️
+- les normes `ecmascript` ✔️
+- l'utilisation de l'`asynchrone` ✔️
+- les spécifités du mot-clef `this` ✔️
 
 ## 💻 Je code en Javascript
 
-### Un exemple de code commenté ❌ / ✔️
+### Un exemple de code commenté ✔️
 
 ```javascript
-(e) => mc2;
+
+const handleSubmit = (event) => {
+  event.preventDefault();
+  axios.post("/boudu/admin/restaurateurs", {
+    lastName,
+    firstName,
+    phoneNumber,
+    mail,
+  });
+};
+
+//petit handleSubmit avec event en paramètre pour eviter le refresh de la page
 ```
 
-### Utilisation dans un projet ❌ / ✔️
+### Utilisation dans un projet ✔️
 
-[lien github](...)
+[lien github](https://github.com/guigzzz31/hackatonEdf)
 
-Description :
+Description : petit hackathon réalisé lors de la wild
 
-### J'ai utilisé ce langage en production ❌ / ✔️
+### J'ai utilisé ce langage en production ✔️
 
-[lien du projet](...)
+[lien du projet](https://github.com/WildCodeSchool/tlse-0919-js-boudu)
 
-Description :
+Description : projet 3 client à la wild
 
-### J'ai utilisé ce langage en environement professionnel ❌ / ✔️
+### J'ai utilisé ce langage en environement professionnel ✔️
 
-Description :
+Description : React Native pour la création d'un appli en stage, React - Express en alternance
 
 ## 🌐 J'utilise des ressources
 
 ### Titre
 
-- lien
-- description
+[lien de la doc](https://redux.js.org/)
+
+- la doc de redux car j'y ai passé beaucoup de temps
 
 ## 🚧 Je franchis les obstacles
 
@@ -60,4 +72,3 @@ Résolution :
 
 - J'ai ecrit un [tutoriel](...) ❌ / ✔️
 - J'ai fait une [présentation](...) ❌ / ✔️
-
